@@ -9,25 +9,16 @@ import {
   Store,
   Atom,
   Repeat,
-  User,
-  BookMarked,
-  Home,
-  
-  Globe, 
   ChevronLeft, 
   ChevronRight, 
-  Calculator, 
-  Zap, 
-  Settings, 
-  Building, 
-  Coffee, 
-  Github, 
-  FileText, 
-  Award, 
-  Menu, 
-  X, 
-  Youtube,
 } from 'lucide-react';
+import app1 from './assets/app-1.png';
+import app2 from './assets/app-2.png';
+import app3 from './assets/app-3.png';
+import app4 from './assets/app-4.png';
+import app5 from './assets/app-5.png';
+import app6 from './assets/app-6.png';
+import app7 from './assets/app-7.png';
 
 const applications = [
   {
@@ -192,6 +183,15 @@ export default function RotatingAppShowcase() {
 
   const currentApp = applications[currentIndex];
   const IconComponent = currentApp.icon;
+  const appImages = {
+    1: app1,
+    2: app2,
+    3: app3,
+    4: app4,
+    5: app5,
+    6: app6,
+    7: app7,
+  };
 
   return (
     // Background color and animation
@@ -273,7 +273,7 @@ export default function RotatingAppShowcase() {
                 <div className="relative overflow-hidden rounded-xl shadow-2xl">
                   <img 
                     key={currentApp.id}
-                    src={`./src/assets/app-${currentApp.id}.png`}
+                    src={appImages[currentApp.id]}
                     alt={`${currentApp.name} application screenshot`}
                     className="w-full h-64 object-cover transition-transform duration-300 hover:scale-105 filter grayscale-[0.3] brightness-25 contrast-110"
                     onError={(e) => {

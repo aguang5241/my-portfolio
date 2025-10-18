@@ -1,4 +1,5 @@
 import { useState } from "react";
+import avatarImg from '../assets/FaceQ.png';
 import { Link } from "react-router-dom";
 import {
   User,
@@ -44,7 +45,7 @@ export default function Sidebar() {
               className="w-20 h-20 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mb-4 hover:scale-105 transition-transform duration-300"
             >
               <img
-                src="./src/assets/FaceQ.png"
+                src={avatarImg}
                 alt="Avatar"
                 className="w-20 h-20 rounded-full object-cover border-2 border-white/20"
               />
@@ -103,7 +104,7 @@ export default function Sidebar() {
                   <Github className="w-5 h-5 text-gray-400" />
                   <span>GitHub Profile</span>
                 </a>
-                
+
                 <a
                   href="https://orcid.org/0000-0002-5734-7748"
                   target="_blank"
