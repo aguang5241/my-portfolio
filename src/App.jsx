@@ -1,17 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from "react-router-dom";
+import { useState, useEffect } from 'react';
 import Sidebar from './components/Sidebar.jsx';
-import {
-  Orbit, 
-  FlaskRound,
-  SquaresExclude,
-  Component,
-  Store,
-  Atom,
-  Repeat,
-  ChevronLeft, 
-  ChevronRight, 
-} from 'lucide-react';
+import { Orbit, FlaskRound, SquaresExclude, Component, Store, Atom, Repeat, ChevronLeft, ChevronRight, Bot, } from 'lucide-react';
 import app1 from './assets/app-1.png';
 import app2 from './assets/app-2.png';
 import app3 from './assets/app-3.png';
@@ -19,6 +8,7 @@ import app4 from './assets/app-4.png';
 import app5 from './assets/app-5.png';
 import app6 from './assets/app-6.png';
 import app7 from './assets/app-7.png';
+import app8 from './assets/app-8.png';
 
 const applications = [
   {
@@ -83,6 +73,15 @@ const applications = [
     icon: Repeat,
     color: 'from-pink-500 to-red-600',
     features: ['POSCAR Conversion', 'Coordinate Transformation', 'Atomic Simulation', 'Python Application']
+  },
+  {
+    id: 8,
+    name: 'Py-chatGPT',
+    title: 'ChatGPT-based Chatbot',
+    description: 'A chatbot using chatGPT API, supporting both text-based and voice-based chatting.',
+    icon: Bot,
+    color: 'from-pink-500 to-red-600',
+    features: ['ChatGPT API', 'Text-based Chatting', 'Voice-based Chatting', 'User-friendly Interface']
   },
 ];
 
@@ -176,6 +175,8 @@ export default function RotatingAppShowcase() {
       case 'POSCAR-Converter':
         window.open('https://github.com/aguang5241/POSCAR-Converter/', '_blank');
         break;
+      case 'Py-chatGPT':
+        window.open('https://github.com/aguang5241/Py-chatGPT/', '_blank');
       default:
         console.log(`Launch ${appName}`);
     }
@@ -191,6 +192,7 @@ export default function RotatingAppShowcase() {
     5: app5,
     6: app6,
     7: app7,
+    8: app8,
   };
 
   return (

@@ -1,17 +1,6 @@
 import { Link } from "react-router-dom";
 import Sidebar from '../components/Sidebar.jsx'
-import {
-  Orbit, 
-  FlaskRound,
-  SquaresExclude,
-  Component,
-  Store,
-  Atom,
-  Repeat,
-  ChevronLeft, 
-  ChevronRight, 
-  Link2Icon
-} from 'lucide-react';
+import { Link2Icon } from "lucide-react";
 
 export default function CV() {
   return (
@@ -31,11 +20,11 @@ export default function CV() {
       {/* Main content (with left margin for sidebar on desktop) */}
       <div className="flex-1 lg:ml-80 flex flex-col items-center justify-center p-6">
         <div className="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/10 shadow-xl w-full max-w-3xl space-y-6">
-          <h1 className="text-4xl font-bold mb-6 text-center">Curriculum Vitae</h1>
+          <h1 className="text-4xl font-bold mb-6 text-center text-blue-400">Curriculum Vitae</h1>
 
           <section>
             <h2 className="text-2xl font-semibold text-blue-400 mb-2">Research Interests</h2>
-            <p className="text-gray-200 mb-4 italic text-justify">
+            <p className="text-gray-200 mb-4 text-justify">
               Ph.D. candidate in Materials Engineering at Worcester Polytechnic Institute, specializing in computational materials design through the integration of first-principles calculations and machine learning. Research centers on exploring structure-property relationships and enabling accelerated discovery of advanced functional materials. Supported by a strong publication record and experience in interdisciplinary collaboration across theory, simulation, and data-driven approaches.
             </p>
           </section>
@@ -236,6 +225,11 @@ export default function CV() {
               page.
             </p>
           </section>
+
+          {/* Optional footer text */}
+          <p className="text-center text-gray-400 text-sm mt-8">
+            © {new Date().getFullYear()} Guangchen Liu · All Rights Reserved
+          </p>
         </div>
 
         <Link

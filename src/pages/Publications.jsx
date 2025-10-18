@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Sidebar from "../components/Sidebar.jsx";
-import { BookOpen, ExternalLink } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 
 export default function Publications() {
   const publications = [
@@ -118,8 +118,7 @@ export default function Publications() {
       {/* Main content */}
       <div className="flex-1 lg:ml-80 flex flex-col items-center justify-center p-6">
         <div className="bg-white/10 backdrop-blur-md p-10 rounded-2xl border border-white/10 shadow-2xl w-full max-w-4xl">
-          <h1 className="text-4xl font-bold mb-6 text-center flex items-center justify-center gap-3">
-            <BookOpen className="w-8 h-8 text-blue-400" />
+          <h1 className="text-4xl font-bold mb-6 text-center text-blue-400">
             Publications
           </h1>
 
@@ -193,6 +192,11 @@ export default function Publications() {
               </li>
             ))}
           </ul>
+
+          {/* Optional footer text */}
+          <p className="text-center text-gray-400 text-sm mt-8">
+            © {new Date().getFullYear()} Guangchen Liu · All Rights Reserved
+          </p>
         </div>
 
         {/* Back to Home */}

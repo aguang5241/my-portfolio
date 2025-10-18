@@ -1,20 +1,7 @@
 import { useState } from "react";
 import avatarImg from '../assets/FaceQ.png';
 import { Link } from "react-router-dom";
-import {
-  User,
-  BookOpen,
-  Home,
-  Globe,
-  Github,
-  Linkedin,
-  IdCard,
-  GraduationCap,
-  BookMarked,
-  Coffee,
-  Menu,
-  X,
-} from "lucide-react";
+import { Home, User, BookOpen, Phone, Globe, Github, Linkedin, IdCard, GraduationCap, BookMarked, Coffee, Menu, X, } from "lucide-react";
 
 export default function Sidebar() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -90,6 +77,15 @@ export default function Sidebar() {
                 <BookOpen className="w-5 h-5 text-purple-400" />
                 <span>Publications</span>
               </Link>
+
+              <Link
+                to="/contacts"
+                onClick={() => setSidebarOpen(false)}
+                className="flex items-center space-x-3 w-full p-3 rounded-lg hover:bg-white/10 transition-colors"
+              >
+                <Phone className="w-5 h-5 text-red-400" />
+                <span>Contacts</span>
+              </Link>
             </div>
 
             {/* --- External Links --- */}
@@ -112,7 +108,7 @@ export default function Sidebar() {
                   rel="noopener noreferrer"
                   className="flex items-center space-x-3 w-full p-3 rounded-lg hover:bg-white/10 transition-colors"
                 >
-                  <Linkedin className="w-5 h-5 text-pink-400" />
+                  <Linkedin className="w-5 h-5 text-blue-500" />
                   <span>LinkedIn</span>
                 </a>
 
@@ -132,7 +128,7 @@ export default function Sidebar() {
                   rel="noopener noreferrer"
                   className="flex items-center space-x-3 w-full p-3 rounded-lg hover:bg-white/10 transition-colors"
                 >
-                  <GraduationCap className="w-5 h-5 text-yellow-400" />
+                  <GraduationCap className="w-5 h-5 text-blue-600" />
                   <span>Google Scholar</span>
                 </a>
 
@@ -162,7 +158,7 @@ export default function Sidebar() {
                   rel="noopener noreferrer"
                   className="flex items-center space-x-3 w-full p-3 rounded-lg hover:bg-white/10 transition-colors"
                 >
-                  <Coffee className="w-5 h-5 text-purple-400" />
+                  <Coffee className="w-5 h-5 text-yellow-400" />
                   <span>Buy Me a Coffee</span>
                 </a>
               </div>
@@ -171,7 +167,7 @@ export default function Sidebar() {
 
           {/* Footer */}
           <div className="mt-8 pt-4 border-t border-white/10 text-center text-xs text-gray-400">
-            <p>© 2025 Guangchen Liu</p>
+            <p>© 2025 Guangchen Liu · All Rights Reserved</p>
           </div>
         </div>
       </div>
