@@ -49,7 +49,7 @@ export default function CV() {
                   <span className="text-gray-400">Materials Engineering</span>
                 </div>
                 <div className="text-right">
-                  <strong>Ph.D</strong> <br />
+                  <strong>Ph.D.</strong> <br />
                   <span className="text-gray-400">Aug 2021 – Present</span>
                 </div>
               </li>
