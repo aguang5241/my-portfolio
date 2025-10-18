@@ -126,7 +126,7 @@ export default function Publications() {
           <p className="text-gray-300 text-center mb-10">
             Below is a selection of my research publications. For a complete list, visit my{" "}
             <a
-              href="https://scholar.google.com/citations?user=GGK2czoAAAAJ&hl=en"
+              href="https://scholar.google.com/citations?user=DzYOUo4AAAAJ"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-400 hover:underline"
