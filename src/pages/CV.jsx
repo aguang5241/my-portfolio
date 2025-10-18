@@ -22,15 +22,15 @@ export default function CV() {
         <div className="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/10 shadow-xl w-full max-w-3xl space-y-6">
           <h1 className="text-4xl font-bold mb-6 text-center text-blue-400">Curriculum Vitae</h1>
 
-          <section>
-            <h2 className="text-2xl font-semibold text-blue-400 mb-2">Research Interests</h2>
+          <section className="bg-white/5 hover:bg-white/10 transition-all duration-300 rounded-xl p-5 border border-white/10 shadow-md">
+            <h2 className="text-2xl font-semibold text-blue-300 mb-2">Research Interests</h2>
             <p className="text-gray-200 mb-4 text-justify">
               Ph.D. candidate in Materials Engineering at Worcester Polytechnic Institute, specializing in computational materials design through the integration of first-principles calculations and machine learning. Research centers on exploring structure-property relationships and enabling accelerated discovery of advanced functional materials. Supported by a strong publication record and experience in interdisciplinary collaboration across theory, simulation, and data-driven approaches.
             </p>
           </section>
 
-          <section>
-            <h2 className="text-2xl font-semibold text-blue-400 mb-4">Education</h2>
+          <section className="bg-white/5 hover:bg-white/10 transition-all duration-300 rounded-xl p-5 border border-white/10 shadow-md">
+            <h2 className="text-2xl font-semibold text-blue-300 mb-2">Education</h2>
             <ul className="space-y-3 text-gray-200">
               <li className="grid grid-cols-2 gap-2">
                 <div>
@@ -67,8 +67,8 @@ export default function CV() {
             </ul>
           </section>
 
-          <section>
-            <h2 className="text-2xl font-semibold text-blue-400 mb-2">Projects</h2>
+          <section className="bg-white/5 hover:bg-white/10 transition-all duration-300 rounded-xl p-5 border border-white/10 shadow-md">
+            <h2 className="text-2xl font-semibold text-blue-300 mb-2">Projects</h2>
             <ul className="space-y-3 text-gray-200">
               <li className="grid grid-cols-[10fr_1fr] gap-2">
                 <div>
@@ -132,8 +132,8 @@ export default function CV() {
             </ul>
           </section>
 
-          <section>
-            <h2 className="text-2xl font-semibold text-blue-400 mb-2">Skills</h2>
+          <section className="bg-white/5 hover:bg-white/10 transition-all duration-300 rounded-xl p-5 border border-white/10 shadow-md">
+            <h2 className="text-2xl font-semibold text-blue-300 mb-2">Skills</h2>
             <ul className="space-y-3 text-gray-200">
               <li className="grid grid-cols-2 gap-2">
                 <div>
@@ -170,8 +170,8 @@ export default function CV() {
             </ul>
           </section>
 
-          <section>
-            <h2 className="text-2xl font-semibold text-blue-400 mb-2">Awards</h2>
+          <section className="bg-white/5 hover:bg-white/10 transition-all duration-300 rounded-xl p-5 border border-white/10 shadow-md">
+            <h2 className="text-2xl font-semibold text-blue-300 mb-2">Awards</h2>
             <ul className="space-y-3 text-gray-200">
               <li className="grid grid-cols-[5fr_1fr] gap-2">
                 <div>
@@ -215,8 +215,8 @@ export default function CV() {
             </ul>
           </section>
 
-          <section>
-            <h2 className="text-2xl font-semibold text-blue-400 mb-2">Publications</h2>
+          <section className="bg-white/5 hover:bg-white/10 transition-all duration-300 rounded-xl p-5 border border-white/10 shadow-md">
+            <h2 className="text-2xl font-semibold text-blue-300 mb-2">Publications</h2>
             <p className="text-gray-200">
               See full list on the{" "}
               <Link to="/publications" className="text-blue-400 hover:underline">
