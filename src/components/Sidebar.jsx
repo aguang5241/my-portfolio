@@ -7,6 +7,7 @@ import {
   Home,
   Globe,
   Github,
+  Linkedin,
   IdCard,
   GraduationCap,
   BookMarked,
@@ -102,7 +103,17 @@ export default function Sidebar() {
                   className="flex items-center space-x-3 w-full p-3 rounded-lg hover:bg-white/10 transition-colors"
                 >
                   <Github className="w-5 h-5 text-gray-400" />
-                  <span>GitHub Profile</span>
+                  <span>GitHub</span>
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/aguang5241"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center space-x-3 w-full p-3 rounded-lg hover:bg-white/10 transition-colors"
+                >
+                  <Linkedin className="w-5 h-5 text-gray-400" />
+                  <span>LinkedIn</span>
                 </a>
 
                 <a
@@ -112,7 +123,7 @@ export default function Sidebar() {
                   className="flex items-center space-x-3 w-full p-3 rounded-lg hover:bg-white/10 transition-colors"
                 >
                   <IdCard className="w-5 h-5 text-green-400" />
-                  <span>ORCID Profile</span>
+                  <span>ORCID</span>
                 </a>
 
                 <a
