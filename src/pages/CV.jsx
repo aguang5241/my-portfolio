@@ -70,60 +70,60 @@ export default function CV() {
           <section className="bg-white/5 hover:bg-white/10 transition-all duration-300 rounded-xl p-5 border border-white/10 shadow-md">
             <h2 className="text-2xl font-semibold text-blue-300 mb-2">Projects</h2>
             <ul className="space-y-3 text-gray-200">
-              <li className="grid grid-cols-[10fr_1fr] gap-2">
+              <li className="grid grid-cols-1 md:grid-cols-[5fr_1fr] gap-2 items-start">
                 <div>
                   <strong>HEP-Explorer</strong> <br />
                   <span className="text-gray-400">An application for analyzing substitutional effects in ABO₃ high-entropy perovskites (HEPs), supporting compositional screening, property prediction, and performance optimization.</span> <br />
                   <Link2Icon className="inline w-4 h-4 text-blue-400 mr-1" />
-                  <a href="https://github.com/aguang5241/HEP-Explorer" className="text-gray-400 hover:underline">https://github.com/aguang5241/HEP-Explorer</a>
+                  <a href="https://github.com/aguang5241/HEP-Explorer" className="text-gray-400 hover:underline break-words">https://github.com/aguang5241/HEP-Explorer</a>
                 </div>
                 <div className="text-right">
                   <strong>2025</strong>
                 </div>
               </li>
 
-              <li className="grid grid-cols-[10fr_1fr] gap-2">
+              <li className="grid grid-cols-1 md:grid-cols-[5fr_1fr] gap-2 items-start">
                 <div>
                   <strong>LCO-Doper</strong> <br />
                   <span className="text-gray-400">An application for analyzing dopant effects on LaCoO₃ (LCO), supporting composition optimization and material performance enhancement.</span> <br />
                   <Link2Icon className="inline w-4 h-4 text-blue-400 mr-1" />
-                  <a href="https://github.com/aguang5241/LCO-Doper" className="text-gray-400 hover:underline">https://github.com/aguang5241/LCO-Doper</a>
+                  <a href="https://github.com/aguang5241/LCO-Doper" className="text-gray-400 hover:underline break-words">https://github.com/aguang5241/LCO-Doper</a>
                 </div>
                 <div className="text-right">
                   <strong>2025</strong>
                 </div>
               </li>
 
-              <li className="grid grid-cols-[10fr_1fr] gap-2">
+              <li className="grid grid-cols-1 md:grid-cols-[5fr_1fr] gap-2 items-start">
                 <div>
                   <strong>Interface-Maker</strong> <br />
                   <span className="text-gray-400">An application for generating customizable slabs and interfaces for first-principles simulations.</span> <br />
                   <Link2Icon className="inline w-4 h-4 text-blue-400 mr-1" />
-                  <a href="https://github.com/aguang5241/Interface-Maker" className="text-gray-400 hover:underline">https://github.com/aguang5241/Interface-Maker</a>
+                  <a href="https://github.com/aguang5241/Interface-Maker" className="text-gray-400 hover:underline break-words">https://github.com/aguang5241/Interface-Maker</a>
                 </div>
                 <div className="text-right">
                   <strong>2025</strong>
                 </div>
               </li>
 
-              <li className="grid grid-cols-[10fr_1fr] gap-2">
+              <li className="grid grid-cols-1 md:grid-cols-[5fr_1fr] gap-2 items-start">
                 <div>
                   <strong>HEA-ML</strong> <br />
                   <span className="text-gray-400">An application for designing Al-Fe-Co-Cr-Ni high-entropy alloys by combining first-principles calculations and machine learning.</span> <br />
                   <Link2Icon className="inline w-4 h-4 text-blue-400 mr-1" />
-                  <a href="https://github.com/aguang5241/HEA-ML" className="text-gray-400 hover:underline">https://github.com/aguang5241/HEA-ML</a>
+                  <a href="https://github.com/aguang5241/HEA-ML" className="text-gray-400 hover:underline break-words">https://github.com/aguang5241/HEA-ML</a>
                 </div>
                 <div className="text-right">
                   <strong>2024</strong>
                 </div>
               </li>
 
-              <li className="grid grid-cols-[10fr_1fr] gap-2">
+              <li className="grid grid-cols-1 md:grid-cols-[5fr_1fr] gap-2 items-start">
                 <div>
                   <strong>Alloy-Supermarket</strong> <br />
                   <span className="text-gray-400">An application that integrates computational thermodynamics and machine learning for Sc-modified Al-Si-Mg alloy design.</span> <br />
                   <Link2Icon className="inline w-4 h-4 text-blue-400 mr-1" />
-                  <a href="https://github.com/aguang5241/Alloy-Supermarket" className="text-gray-400 hover:underline">https://github.com/aguang5241/Alloy-Supermarket</a>
+                  <a href="https://github.com/aguang5241/Alloy-Supermarket" className="text-gray-400 hover:underline break-words">https://github.com/aguang5241/Alloy-Supermarket</a>
                 </div>
                 <div className="text-right">
                   <strong>2022</strong>
@@ -159,7 +159,7 @@ export default function CV() {
 
               <li className="grid grid-cols-2 gap-2">
                 <div>
-                  <strong>Thermodynamics</strong> <br />
+                  <strong className="break-words">Thermodynamics</strong> <br />
                   <span className="text-gray-400">ThermoCalc, Pandat</span> <br />
                 </div>
                 <div>

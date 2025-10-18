@@ -210,11 +210,11 @@ export default function RotatingAppShowcase() {
       <Sidebar />
 
       {/* Main content - Always has left margin on desktop */}
-      <div className="lg:ml-80 flex-1 flex flex-col items-center justify-center p-4">
+      <div className="lg:ml-80 flex-1 flex flex-col items-center justify-center p-1">
         
         {/* Welcome message */}
         <div className="w-full max-w-7xl mb-8">
-          <h1 className="text-4xl md:text-5xl font-bold text-white text-center mb-2">
+          <h1 className="text-4xl md:text-5xl font-bold text-white text-center mb-2 ">
             Hi, there! I'm Guangchen Liu.
           </h1>
           <p className="text-lg text-gray-300 text-center">
