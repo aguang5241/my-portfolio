@@ -70,7 +70,7 @@ export default function Sidebar() {
                 className="flex items-center space-x-3 w-full p-3 rounded-lg hover:bg-white/10 transition-colors"
               >
                 <Home className="w-5 h-5 text-indigo-400" />
-                <span>Main Page</span>
+                <span>Home</span>
               </Link>
 
               <Link

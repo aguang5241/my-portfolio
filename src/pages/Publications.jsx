@@ -6,33 +6,100 @@ export default function Publications() {
   const publications = [
     {
       title:
-        "Defect Chemistry and Mixed Conduction in Ruddlesden–Popper Nickelates for Solid Oxide Fuel Cell Cathodes",
-      journal: "Materials Today Physics",
+        "Substitutional Effects at A- and B-Sites in High-Entropy ABO3 Perovskites: Insights from Machine Learning-Accelerated Simulations and Active Learning",
+      journal: "Journal of Materials Science & Technology (Submitted)",
       year: 2025,
-      link: "https://doi.org/10.xxxx/matphy.2025.xxx",
+      link: "https://doi.org/xxx/xxxxxx",
     },
     {
       title:
-        "Unraveling Doping Effects in LaCoO₃ via Machine Learning–Accelerated First-Principles Simulations",
-      journal: "Applied Materials Today",
+        "Unraveling Doping Effects in LaCoO3 via Machine Learning-Accelerated Atomic Simulations and Active Learning",
+      journal: "Acta Materialia (Submitted)",
+      year: 2025,
+      link: "https://doi.org/xxx/xxxxxx",
+    },
+    {
+      title:
+        "A Computational Framework for Interface Design Using Lattice Matching, Machine Learning Potentials, and Active Learning: A Case Study on LaCoO3/La2NiO4",
+      journal: "Materials Today Physics (Accepted)",
+      year: 2025,
+      link: "https://doi.org/xxx/xxxxxx",
+    },
+    {
+      title:
+        "Ab initio study on the effect of A-site doping on the stability, equilibrium volume, activation energy barrier, and oxygen diffusivity in La2-xAxNiO4+δ",
+      journal: "International Journal of Hydrogen Energy",
+      year: 2025,
+      link: "https://doi.org/10.1016/j.ijhydene.2025.03.239",
+    },
+    {
+      title:
+        "High-Entropy Materials Design by Integrating the First-Principles Calculations and Machine Learning: A Case Study in the Al-Co-Cr-Fe-Ni System",
+      journal: "High Entropy Alloys & Materials",
       year: 2024,
-      link: "https://doi.org/10.xxxx/apmat.2024.xxx",
+      link: "https://doi.org/10.1007/s44210-024-00041-3",
     },
     {
       title:
-        "A Computational Framework for Interface Design Using Lattice Matching, Machine Learning Potentials, and Active Learning",
-      journal: "Journal of Chemical Theory and Computation",
-      year: 2024,
-      link: "https://doi.org/10.xxxx/jctc.2024.xxx",
-    },
-    {
-      title:
-        "High-Entropy Perovskites for Energy Conversion and Storage: A Machine Learning Perspective",
-      journal: "Energy & Environmental Materials",
+        "Accelerated discovery of high-performance Al-Si-Mg-Sc casting alloys by integrating active learning with high-throughput CALPHAD calculations",
+      journal: "Science and Technology of Advanced Materials",
       year: 2023,
-      link: "https://doi.org/10.xxxx/eem.2023.xxx",
+      link: "https://doi.org/10.1080/14686996.2023.2196242",
+    },
+    {
+      title:
+        "Ab initio investigations on the electronic properties and stability of Cu-substituted lead apatite (LK-99) family with different doping concentrations (x= 0, 1, 2)",
+      journal: "Materials Today Communications",
+      year: 2023,
+      link: "https://doi.org/10.1016/j.mtcomm.2023.107379",
+    },
+    {
+      title:
+        "A systematic ab initio study of vacancy formation energy, diffusivity, and ionic conductivity of Ln2NiO4+ δ (Ln= La, Nd, Pr)",
+      journal: "Journal of Power Sources",
+      year: 2023,
+      link: "https://doi.org/10.1016/j.jpowsour.2023.233200",
+    },
+    {
+      title:
+        "Revisit the VEC criterion in high entropy alloys (HEAs) with high-throughput ab initio calculations: a case study with Al-Co-Cr-Fe-Ni system",
+      journal: "Journal of Alloys and Compounds",
+      year: 2022,
+      link: "https://doi.org/10.1016/j.jallcom.2022.165477",
+    },
+    {
+      title:
+        "Efficient alloy design of Sr-modified A356 alloys driven by computational thermodynamics and machine learning",
+      journal: "Journal of Materials Science & Technology",
+      year: 2022,
+      link: "https://doi.org/10.1016/j.jmst.2021.09.061",
+    },
+    {
+      title:
+        "Boosting for concept design of casting aluminum alloys driven by combining computational thermodynamics and machine learning techniques",
+      journal: "Journal of Materials Informatics",
+      year: 2021,
+      link: "https://doi.org/10.20517/jmi.2021.10",
+    },
+    {
+      title:
+        "A machine learning accelerated distributed task management system (Malac-Distmas) and its application in high-throughput CALPHAD computations aiming at efficient alloy design",
+      journal: "Advanced Powder Materials",
+      year: 2021,
+      link: "https://doi.org/10.1016/j.apmate.2021.09.005",
+    },
+    {
+      title:
+        "Optimization of casting means and heat treatment routines for improving mechanical and corrosion resistance properties of A356-0.54 Sc casting alloy",
+      journal: "Materials Today Communications",
+      year: 2020,
+      link: "https://doi.org/10.1016/j.mtcomm.2020.101227",
     },
   ];
+
+  // Split the publications
+  const ongoing = publications.slice(0, 3);
+  const published = publications.slice(3);
 
   return (
     // Background color and animation
@@ -57,8 +124,7 @@ export default function Publications() {
           </h1>
 
           <p className="text-gray-300 text-center mb-10">
-            Below is a selected list of my publications and ongoing research
-            efforts. For a complete list, visit my{" "}
+            Below is a selection of my research publications. For a complete list, visit my{" "}
             <a
               href="https://scholar.google.com/citations?user=GGK2czoAAAAJ&hl=en"
               target="_blank"
@@ -70,9 +136,42 @@ export default function Publications() {
             .
           </p>
 
-          {/* Publications list */}
+          {/* In Progress */}
+          <h2 className="text-2xl font-semibold text-green-300 mb-4">
+            In Progress
+          </h2>
           <ul className="space-y-6">
-            {publications.map((pub, i) => (
+            {ongoing.map((pub, i) => (
+              <li
+                key={i}
+                className="bg-white/5 hover:bg-white/10 transition-all duration-300 rounded-xl p-5 border border-white/10 shadow-md"
+              >
+                <h3 className="text-xl font-semibold text-white mb-1">
+                  {pub.title}
+                </h3>
+                <p className="text-gray-400 text-sm italic mb-2">
+                  {pub.journal}, {pub.year}
+                </p>
+                {/* <a
+                  href={pub.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors text-sm"
+                >
+                  View publication <ExternalLink className="w-4 h-4 ml-1" />
+                </a> */}
+              </li>
+            ))}
+          </ul>
+          <br />
+
+
+          {/* Published works */}
+          <h2 className="text-2xl font-semibold text-green-300 mb-4">
+            Published Works
+          </h2>
+          <ul className="space-y-6">
+            {published.map((pub, i) => (
               <li
                 key={i}
                 className="bg-white/5 hover:bg-white/10 transition-all duration-300 rounded-xl p-5 border border-white/10 shadow-md"

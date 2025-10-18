@@ -1,5 +1,17 @@
 import { Link } from "react-router-dom";
 import Sidebar from '../components/Sidebar.jsx'
+import {
+  Orbit, 
+  FlaskRound,
+  SquaresExclude,
+  Component,
+  Store,
+  Atom,
+  Repeat,
+  ChevronLeft, 
+  ChevronRight, 
+  Link2Icon
+} from 'lucide-react';
 
 export default function CV() {
   return (
@@ -22,35 +34,196 @@ export default function CV() {
           <h1 className="text-4xl font-bold mb-6 text-center">Curriculum Vitae</h1>
 
           <section>
-            <h2 className="text-2xl font-semibold text-blue-400 mb-2">Education</h2>
-            <ul className="space-y-2 text-gray-200">
-              <li>
-                <strong>PhD in Mechanical & Materials Engineering</strong><br />
-                Worcester Polytechnic Institute (Expected 2026)
-              </li>
-              <li>
-                <strong>BSc in Physics & Chemistry</strong><br />
-                University of Rhode Island (2023)
-              </li>
-            </ul>
-          </section>
-
-          <section>
-            <h2 className="text-2xl font-semibold text-blue-400 mb-2">Technical Skills</h2>
-            <ul className="grid md:grid-cols-2 gap-2 text-gray-200">
-              <li>Density Functional Theory (VASP, R2SCAN+U)</li>
-              <li>Machine Learning (PyTorch, Pyro, Optuna)</li>
-              <li>High-Performance Computing (Slurm, TACC)</li>
-              <li>Thermodynamics (PyCalphad, Zentropy)</li>
-            </ul>
-          </section>
-
-          <section>
             <h2 className="text-2xl font-semibold text-blue-400 mb-2">Research Interests</h2>
-            <p className="text-gray-200">
-              Computational materials science, defect chemistry, machine learning potentials,
-              and energy materials design for solid oxide fuel cells.
+            <p className="text-gray-200 mb-4 italic text-justify">
+              Ph.D. candidate in Materials Engineering at Worcester Polytechnic Institute, specializing in computational materials design through the integration of first-principles calculations and machine learning. Research centers on exploring structure-property relationships and enabling accelerated discovery of advanced functional materials. Supported by a strong publication record and experience in interdisciplinary collaboration across theory, simulation, and data-driven approaches.
             </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold text-blue-400 mb-4">Education</h2>
+            <ul className="space-y-3 text-gray-200">
+              <li className="grid grid-cols-2 gap-2">
+                <div>
+                  <strong>Worcester Polytechnic Institute, USA</strong> <br />
+                  <span className="text-gray-400">Materials Engineering</span>
+                </div>
+                <div className="text-right">
+                  <strong>Ph.D</strong> <br />
+                  <span className="text-gray-400">Aug 2021 – Present</span>
+                </div>
+              </li>
+
+              <li className="grid grid-cols-2 gap-2">
+                <div>
+                  <strong>Central South University, China</strong> <br />
+                  <span className="text-gray-400">Materials Engineering</span>
+                </div>
+                <div className="text-right">
+                  <strong>M.S.</strong> <br />
+                  <span className="text-gray-400">Aug 2018 – Jun 2021</span>
+                </div>
+              </li>
+
+              <li className="grid grid-cols-2 gap-2">
+                <div>
+                  <strong>Central South University, China</strong> <br />
+                  <span className="text-gray-400">Powder Materials Science & Engineering</span>
+                </div>
+                <div className="text-right">
+                  <strong>B.S.</strong> <br />
+                  <span className="text-gray-400">Aug 2014 – Jun 2018</span>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold text-blue-400 mb-2">Projects</h2>
+            <ul className="space-y-3 text-gray-200">
+              <li className="grid grid-cols-[10fr_1fr] gap-2">
+                <div>
+                  <strong>HEP-Explorer</strong> <br />
+                  <span className="text-gray-400">An application for analyzing substitutional effects in ABO₃ high-entropy perovskites (HEPs), supporting compositional screening, property prediction, and performance optimization.</span> <br />
+                  <Link2Icon className="inline w-4 h-4 text-blue-400 mr-1" />
+                  <a href="https://github.com/aguang5241/HEP-Explorer" className="text-gray-400 hover:underline">https://github.com/aguang5241/HEP-Explorer</a>
+                </div>
+                <div className="text-right">
+                  <strong>2025</strong>
+                </div>
+              </li>
+
+              <li className="grid grid-cols-[10fr_1fr] gap-2">
+                <div>
+                  <strong>LCO-Doper</strong> <br />
+                  <span className="text-gray-400">An application for analyzing dopant effects on LaCoO₃ (LCO), supporting composition optimization and material performance enhancement.</span> <br />
+                  <Link2Icon className="inline w-4 h-4 text-blue-400 mr-1" />
+                  <a href="https://github.com/aguang5241/LCO-Doper" className="text-gray-400 hover:underline">https://github.com/aguang5241/LCO-Doper</a>
+                </div>
+                <div className="text-right">
+                  <strong>2025</strong>
+                </div>
+              </li>
+
+              <li className="grid grid-cols-[10fr_1fr] gap-2">
+                <div>
+                  <strong>Interface-Maker</strong> <br />
+                  <span className="text-gray-400">An application for generating customizable slabs and interfaces for first-principles simulations.</span> <br />
+                  <Link2Icon className="inline w-4 h-4 text-blue-400 mr-1" />
+                  <a href="https://github.com/aguang5241/Interface-Maker" className="text-gray-400 hover:underline">https://github.com/aguang5241/Interface-Maker</a>
+                </div>
+                <div className="text-right">
+                  <strong>2025</strong>
+                </div>
+              </li>
+
+              <li className="grid grid-cols-[10fr_1fr] gap-2">
+                <div>
+                  <strong>HEA-ML</strong> <br />
+                  <span className="text-gray-400">An application for designing Al-Fe-Co-Cr-Ni high-entropy alloys by combining first-principles calculations and machine learning.</span> <br />
+                  <Link2Icon className="inline w-4 h-4 text-blue-400 mr-1" />
+                  <a href="https://github.com/aguang5241/HEA-ML" className="text-gray-400 hover:underline">https://github.com/aguang5241/HEA-ML</a>
+                </div>
+                <div className="text-right">
+                  <strong>2024</strong>
+                </div>
+              </li>
+
+              <li className="grid grid-cols-[10fr_1fr] gap-2">
+                <div>
+                  <strong>Alloy-Supermarket</strong> <br />
+                  <span className="text-gray-400">An application that integrates computational thermodynamics and machine learning for Sc-modified Al-Si-Mg alloy design.</span> <br />
+                  <Link2Icon className="inline w-4 h-4 text-blue-400 mr-1" />
+                  <a href="https://github.com/aguang5241/Alloy-Supermarket" className="text-gray-400 hover:underline">https://github.com/aguang5241/Alloy-Supermarket</a>
+                </div>
+                <div className="text-right">
+                  <strong>2022</strong>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold text-blue-400 mb-2">Skills</h2>
+            <ul className="space-y-3 text-gray-200">
+              <li className="grid grid-cols-2 gap-2">
+                <div>
+                  <strong>First-Principles Calculations</strong> <br />
+                  <span className="text-gray-400">VASP, VESTA, ASE, Pymatgen</span> <br />
+                </div>
+                <div>
+                  <strong>Machine Learning</strong> <br />
+                  <span className="text-gray-400">PyTorch, Scikit-learn, SciPy, NumPy, Pandas</span> <br />
+                </div>
+              </li>
+
+              <li className="grid grid-cols-2 gap-2">
+                <div>
+                  <strong>Programming</strong> <br />
+                  <span className="text-gray-400">Python, C#, C++, Javascript</span> <br />
+                </div>
+                <div>
+                  <strong>Molecular Dynamics</strong> <br />
+                  <span className="text-gray-400">Matlantis, LAMMPS</span> <br />
+                </div>
+              </li>
+
+              <li className="grid grid-cols-2 gap-2">
+                <div>
+                  <strong>Thermodynamics</strong> <br />
+                  <span className="text-gray-400">ThermoCalc, Pandat</span> <br />
+                </div>
+                <div>
+                  <strong>Data Visualization</strong> <br />
+                  <span className="text-gray-400">Matplotlib, Seaborn, Plotly</span> <br />
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold text-blue-400 mb-2">Awards</h2>
+            <ul className="space-y-3 text-gray-200">
+              <li className="grid grid-cols-[5fr_1fr] gap-2">
+                <div>
+                  <strong>National Science Foundation Scholarship</strong> <br />
+                  <span className="text-gray-400">CALPHAD</span> <br />
+                </div>
+                <div className="text-right">
+                  <strong>Jun 2023</strong>
+                </div>
+              </li>
+
+              <li className="grid grid-cols-[5fr_1fr] gap-2">
+                <div>
+                  <strong>Golden Egret Scholarship</strong> <br />
+                  <span className="text-gray-400">Xiamen Golden Egret Special Alloy Co., LTD.</span> <br />
+                </div>
+                <div className="text-right">
+                  <strong>Dec 2020</strong>
+                </div>
+              </li>
+
+              <li className="grid grid-cols-[5fr_1fr] gap-2">
+                <div>
+                  <strong>Best Paper Award - Grand Prize</strong> <br />
+                  <span className="text-gray-400">Hunan Education Department</span> <br />
+                </div>
+                <div className="text-right">
+                  <strong>Dec 2020</strong>
+                </div>
+              </li>
+
+              <li className="grid grid-cols-[5fr_1fr] gap-2">
+                <div>
+                  <strong>Best Poster Award – First Prize</strong> <br />
+                  <span className="text-gray-400">Graduate School of Central South University</span> <br />
+                </div>
+                <div className="text-right">
+                  <strong>Dec 2020</strong>
+                </div>
+              </li>
+            </ul>
           </section>
 
           <section>
