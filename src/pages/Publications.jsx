@@ -116,7 +116,7 @@ export default function Publications() {
       <Sidebar />
 
       {/* Main content */}
-      <div className="flex-1 lg:ml-80 flex flex-col items-center justify-center p-6">
+      <div className="flex-1 lg:ml-80 flex flex-col items-center justify-center p-6 z-10">
         <div className="bg-white/10 backdrop-blur-md p-10 rounded-2xl border border-white/10 shadow-2xl w-full max-w-4xl">
           <h1 className="text-4xl font-bold mb-6 text-center text-blue-400">
             Publications

@@ -18,7 +18,7 @@ export default function CV() {
       <Sidebar />
 
       {/* Main content (with left margin for sidebar on desktop) */}
-      <div className="flex-1 lg:ml-80 flex flex-col items-center justify-center p-6">
+      <div className="flex-1 lg:ml-80 flex flex-col items-center justify-center p-6 z-10 border-2">
         <div className="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/10 shadow-xl w-full max-w-3xl space-y-6">
           <h1 className="text-4xl font-bold mb-6 text-center text-blue-400">Curriculum Vitae</h1>
 
