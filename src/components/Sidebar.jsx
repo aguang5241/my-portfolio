@@ -102,7 +102,7 @@ export default function Sidebar() {
                   rel="noopener noreferrer"
                   className="flex items-center space-x-3 w-full p-3 rounded-lg hover:bg-white/10 transition-colors"
                 >
-                  <Github className="w-5 h-5 text-gray-400" />
+                  <Github className="w-5 h-5 text-white-400" />
                   <span>GitHub</span>
                 </a>
 
