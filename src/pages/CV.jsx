@@ -29,7 +29,7 @@ export default function CV() {
               Summary
             </h2>
             <p className="text-gray-200">
-              Ph.D. candidate in Materials Engineering at Worcester Polytechnic Institute, specializing in <strong>machine-learning-accelerated first-principles simulations</strong> for advanced materials design. Research integrates <strong>DFT</strong>, <strong>molecular dynamics</strong>, and <strong>Bayesian active learning</strong> to elucidate structure-property relationships in complex oxides, high-entropy materials, and alloy systems. Developer of multiple <strong>open-source frameworks</strong> — <em>HEA-ML</em>, <em>Interface-Maker</em>, <em>LCO-DOPER</em>, <em>HEP-Explorer</em>, and others — for data-driven discovery of functional materials. Dedicated to advancing computational materials design through interdisciplinary collaboration and open science.
+              Ph.D. candidate in Materials Engineering at Worcester Polytechnic Institute, specializing in <strong>machine-learning-accelerated first-principles simulations</strong> for advanced materials design. Research integrates <strong>DFT</strong>, <strong>molecular dynamics</strong>, and <strong>active learning</strong> to elucidate structure-property relationships in complex oxides, high-entropy materials, and alloy systems. Developer of <strong>open-source frameworks</strong>, including <em>HEA-ML</em>, <em>Interface-Maker</em>, <em>LCO-Doper</em>, and <em>HEP-Explorer</em> for data-driven discovery of functional materials.
             </p>
           </section>
 
@@ -116,16 +116,20 @@ export default function CV() {
                 </div>
               </li>
 
+              <p className="text-gray-200">
+                Ph.D. research focuses on integrating first-principles calculations, molecular dynamics, and machine learning to accelerate the design and discovery of complex oxides, interfaces, and high-entropy materials.
+              </p>
+
               <ul className="list-disc list-inside text-gray-200 space-y-2">
-                <li>Led the <strong>high-entropy alloy (HEA)</strong> design effort in the Al-Co-Cr-Fe-Ni system, integrating first-principles calculations and machine learning to map phase stability and elastic properties (<em>High Entropy Alloys & Materials, 2024</em>).</li>
+                <li>Led the <strong>high-entropy alloy (HEA)</strong> design effort in the Al-Co-Cr-Fe-Ni system, integrating first-principles calculations and machine learning to map phase stability and elastic properties.</li>
                 <li>Developed <strong>machine-learning-accelerated atomic simulation frameworks</strong> integrating DFT, molecular dynamics, neural network potentials, and Bayesian active learning to efficiently predict formation energies, diffusion coefficients, and oxygenvacancy energetics in complex oxides with DFT-level accuracy.</li>
                 <li>Published <strong>9 first-author and co-author papers</strong> in <em>High Entropy Alloys & Materials</em>, <em>Materials Today Physics</em>, <em>Materials Today Communication</em>, <em>Journal of Alloys and Compounds</em>, etc.</li>
                 <li>Created <strong>4 open-source research platforms</strong>:</li>
                 <ul className="list-disc list-inside text-gray-200 ml-5 space-y-2">
-                  <li><strong>HEP-Explorer:</strong> a multi-target Bayesian neural network platform for investigating substitutional effects in high-entropy perovskites (HEPs), incorporating Pareto-front screening for property trade-offs.</li>
-                  <li><strong>LCO-Doper:</strong> an active-learning framework for dopant optimization in LaCoO₃, revealing composition-structure-property relationships governing lattice distortion and ionic conductivity.</li>
-                  <li><strong>Interface-Maker:</strong> a lattice-matching and interface-generation tool coupling ML potentials with DFT to model LaCoO₃/La₂NiO₄ interfaces, achieving over tenfold efficiency improvement in interfacial energy exploration.</li>
                   <li><strong>HEA-ML:</strong> a framework combining first-principles calculations and machine learning for phase stability and mechanical property prediction in Al-Co-Cr-Fe-Ni high-entropy alloys.</li>
+                  <li><strong>Interface-Maker:</strong> a lattice-matching and interface-generation tool coupling ML potentials with DFT to model LaCoO₃/La₂NiO₄ interfaces, achieving over tenfold efficiency improvement in interfacial energy exploration.</li>
+                  <li><strong>LCO-Doper:</strong> an active-learning framework for dopant optimization in LaCoO₃, revealing composition-structure-property relationships governing lattice distortion and ionic conductivity.</li>
+                  <li><strong>HEP-Explorer:</strong> a multi-target Bayesian neural network platform for investigating substitutional effects in high-entropy perovskites, incorporating Pareto-front screening for property trade-offs.</li>
                 </ul>
               </ul>
 
@@ -151,6 +155,10 @@ export default function CV() {
                   <span className="text-gray-400">M.S. Researcher</span>
                 </div>
               </li>
+
+              <p className="text-gray-200">
+                M.S. work centered on coupling computational thermodynamics with machine learning to optimize aluminum-based casting alloys and understand composition–microstructure–property relationships.
+              </p>
 
               <ul className="list-disc list-inside text-gray-200 space-y-2">
                 <li>Developed <strong>Alloy-Supermarket</strong>, an open-source platform that couples <strong>Thermo-Calc</strong> and <strong>machine learning</strong> to design Scmodified A356 Al-Si-Mg casting alloys by linking composition, microstructure, and mechanical properties.</li>
@@ -326,8 +334,8 @@ export default function CV() {
                   <span className="text-gray-400">Worcester Polytechnic Institute, USA</span>
                 </div>
                 <div className="text-right">
-                  <strong>Research Mentor</strong> <br />
-                  <span className="text-gray-400">Aug 2024 - Dec 2024</span>
+                  <strong>Aug 2024 - Dec 2024</strong> <br />
+                  <span className="text-gray-400">Research Mentor</span>
                 </div>
               </li>
 
@@ -337,8 +345,8 @@ export default function CV() {
                   <span className="text-gray-400">Worcester Polytechnic Institute, USA</span>
                 </div>
                 <div className="text-right">
-                  <strong>Teaching Assistant</strong> <br />
-                  <span className="text-gray-400">Mar 2024 - May 2024</span>
+                  <strong>Mar 2024 - May 2024</strong> <br />
+                  <span className="text-gray-400">Teaching Assistant</span>
                 </div>
               </li>
 
@@ -348,8 +356,8 @@ export default function CV() {
                   <span className="text-gray-400">Worcester Polytechnic Institute, USA</span>
                 </div>
                 <div className="text-right">
-                  <strong>Teaching Assistant</strong> <br />
-                  <span className="text-gray-400">Jan 2024 - Mar 2024</span>
+                  <strong>Jan 2024 - Mar 2024</strong> <br />
+                  <span className="text-gray-400">Teaching Assistant</span>
                 </div>
               </li>
 
@@ -359,8 +367,8 @@ export default function CV() {
                   <span className="text-gray-400">Worcester Polytechnic Institute, USA</span>
                 </div>
                 <div className="text-right">
-                  <strong>Teaching Assistant</strong> <br />
-                  <span className="text-gray-400">Mar 2022 - May 2022</span>
+                  <strong>Mar 2022 - May 2022</strong> <br />
+                  <span className="text-gray-400">Teaching Assistant</span>
                 </div>
               </li>
             </ul>
@@ -374,8 +382,8 @@ export default function CV() {
             </h2>
             <ul className="list-disc list-inside text-gray-200 space-y-2">
               <li><strong>Peer Reviewer</strong> for <em>npj Computational Materials</em>, <em>Scientific Reports</em>, <em>Computational Condensed Matter</em>, <em>The Journal of Physical Chemistry</em> and other international journals in computational materials science.</li>
-              <li><strong>Member</strong>, <em>The Minerals, Metals & Materials Society (TMS)</em></li>
-              <li><strong>Conference Organizer</strong>, <em>CALPHAD 2023</em></li>
+              <li><strong>Member</strong>, <em>The Minerals, Metals & Materials Society (TMS)</em>.</li>
+              <li><strong>Conference Organizer</strong>, edited the Technical Program and coordinated meeting logistics and activities for the international <em>CALPHAD 2023</em>.</li>
               <li><strong>Conference Presentations and Posters:</strong></li>
               <ul className="list-disc list-inside text-gray-200 ml-5 space-y-2">
                 <li>Oral Presentation | <em>MS&T 2025</em></li>
