@@ -24,7 +24,10 @@ export default function CV() {
 
           {/* Summary */}
           <section className="bg-white/5 hover:bg-white/10 transition-all duration-300 rounded-xl p-5 border border-white/10 shadow-md">
-            <h2 className="text-2xl font-semibold text-blue-300 mb-2">Summary</h2>
+            <h2 className="text-2xl font-semibold text-blue-300 mb-2 flex items-center gap-3">
+              <span className="w-3 h-3 rounded-full inline-block from-blue-500 to-purple-600 bg-gradient-to-r"></span>
+              Summary
+            </h2>
             <p className="text-gray-200">
               Ph.D. candidate in Materials Engineering at Worcester Polytechnic Institute, specializing in <strong>machine-learning-accelerated first-principles simulations</strong> for advanced materials design. Research integrates <strong>DFT</strong>, <strong>molecular dynamics</strong>, and <strong>Bayesian active learning</strong> to elucidate structure-property relationships in complex oxides, high-entropy materials, and alloy systems. Developer of multiple <strong>open-source frameworks</strong> — <em>HEA-ML</em>, <em>Interface-Maker</em>, <em>LCO-DOPER</em>, <em>HEP-Explorer</em>, and others — for data-driven discovery of functional materials. Dedicated to advancing computational materials design through interdisciplinary collaboration and open science.
             </p>
@@ -32,7 +35,10 @@ export default function CV() {
 
           {/* Research Interests */}
           <section className="bg-white/5 hover:bg-white/10 transition-all duration-300 rounded-xl p-5 border border-white/10 shadow-md">
-            <h2 className="text-2xl font-semibold text-blue-300 mb-2">Research Interests</h2>
+            <h2 className="text-2xl font-semibold text-blue-300 mb-2 flex items-center gap-3">
+              <span className="w-3 h-3 rounded-full inline-block from-blue-500 to-purple-600 bg-gradient-to-r"></span>
+              Research Interests
+            </h2>
             <ul className="list-disc list-inside text-gray-200 space-y-2">
               <li><strong>Machine-learning-accelerated atomic simulations</strong> for the design and discovery of complex materials.</li>
               <li><strong>Defect chemistry, doping, and ionic transport</strong> in perovskite oxides and high-entropy materials.</li>
@@ -43,7 +49,10 @@ export default function CV() {
 
           {/* Education */}
           <section className="bg-white/5 hover:bg-white/10 transition-all duration-300 rounded-xl p-5 border border-white/10 shadow-md">
-            <h2 className="text-2xl font-semibold text-blue-300 mb-2">Education</h2>
+            <h2 className="text-2xl font-semibold text-blue-300 mb-2 flex items-center gap-3">
+              <span className="w-3 h-3 rounded-full inline-block from-blue-500 to-purple-600 bg-gradient-to-r"></span>
+              Education
+            </h2>
             <ul className="space-y-3 text-gray-200">
               <li className="grid grid-cols-2 gap-2">
                 <div>
@@ -82,7 +91,10 @@ export default function CV() {
 
           {/* Research Experiences */}
           <section className="bg-white/5 hover:bg-white/10 transition-all duration-300 rounded-xl p-5 border border-white/10 shadow-md">
-            <h2 className="text-2xl font-semibold text-blue-300 mb-2">Research Experiences</h2>
+            <h2 className="text-2xl font-semibold text-blue-300 mb-2 flex items-center gap-3">
+              <span className="w-3 h-3 rounded-full inline-block from-blue-500 to-purple-600 bg-gradient-to-r"></span>
+              Research Experiences
+            </h2>
             <ul className="space-y-3 text-gray-200">
               <li className="grid grid-cols-2 gap-2">
                 <div>
@@ -150,7 +162,10 @@ export default function CV() {
 
           {/* Research Projects */}
           <section className="bg-white/5 hover:bg-white/10 transition-all duration-300 rounded-xl p-5 border border-white/10 shadow-md">
-            <h2 className="text-2xl font-semibold text-blue-300 mb-2">Research Projects</h2>
+            <h2 className="text-2xl font-semibold text-blue-300 mb-2 flex items-center gap-3">
+              <span className="w-3 h-3 rounded-full inline-block from-blue-500 to-purple-600 bg-gradient-to-r"></span>
+              Research Projects
+            </h2>
             <ul className="space-y-3 text-gray-200">
               <li className="grid grid-cols-1 md:grid-cols-[5fr_1fr] gap-2 items-start">
                 <div>
@@ -251,7 +266,10 @@ export default function CV() {
 
           {/* Awards & Honors */}
           <section className="bg-white/5 hover:bg-white/10 transition-all duration-300 rounded-xl p-5 border border-white/10 shadow-md">
-            <h2 className="text-2xl font-semibold text-blue-300 mb-2">Awards & Honors</h2>
+            <h2 className="text-2xl font-semibold text-blue-300 mb-2 flex items-center gap-3">
+              <span className="w-3 h-3 rounded-full inline-block from-blue-500 to-purple-600 bg-gradient-to-r"></span>
+              Awards & Honors
+            </h2>
             <ul className="space-y-3 text-gray-200">
               <li className="grid grid-cols-[5fr_1fr] gap-2">
                 <div>
@@ -295,48 +313,12 @@ export default function CV() {
             </ul>
           </section>
 
-          {/* Technical Skills */}
-          <section className="bg-white/5 hover:bg-white/10 transition-all duration-300 rounded-xl p-5 border border-white/10 shadow-md">
-            <h2 className="text-2xl font-semibold text-blue-300 mb-2">Technical Skills</h2>
-            <ul className="space-y-3 text-gray-200">
-              <li className="grid grid-cols-2 gap-2">
-                <div>
-                  <strong>Computational Methods</strong> <br />
-                  <span className="text-gray-400">VASP, Matlantis, ASE, Pymatgen</span> <br />
-                </div>
-                <div>
-                  <strong>Machine Learning</strong> <br />
-                  <span className="text-gray-400">PyTorch, Pyro, Scikit-learn</span> <br />
-                </div>
-              </li>
-
-              <li className="grid grid-cols-2 gap-2">
-                <div>
-                  <strong className="break-words">Thermodynamics</strong> <br />
-                  <span className="text-gray-400">Thermo-Calc, PyCalphad</span> <br />
-                </div>
-                <div>
-                  <strong>Visualization</strong> <br />
-                  <span className="text-gray-400">Matplotlib, Seaborn, Plotly, VESTA, Origin</span> <br />
-                </div>
-              </li>
-
-              <li className="grid grid-cols-2 gap-2">
-                <div>
-                  <strong>Programming</strong> <br />
-                  <span className="text-gray-400">Python, C#, C++, Javascript</span> <br />
-                </div>
-                <div>
-                  <strong>Data Analysis</strong> <br />
-                  <span className="text-gray-400">Pandas, NumPy, Excel</span> <br />
-                </div>
-              </li>
-            </ul>
-          </section>
-
           {/* Teaching & Mentoring */}
           <section className="bg-white/5 hover:bg-white/10 transition-all duration-300 rounded-xl p-5 border border-white/10 shadow-md">
-            <h2 className="text-2xl font-semibold text-blue-300 mb-2">Teaching & Mentoring</h2>
+            <h2 className="text-2xl font-semibold text-blue-300 mb-2 flex items-center gap-3">
+              <span className="w-3 h-3 rounded-full inline-block from-blue-500 to-purple-600 bg-gradient-to-r"></span>
+              Teaching & Mentoring
+            </h2>
             <ul className="space-y-3 text-gray-200">
               <li className="grid grid-cols-2 gap-2">
                 <div>
@@ -386,7 +368,10 @@ export default function CV() {
 
           {/* Professional Activities */}
           <section className="bg-white/5 hover:bg-white/10 transition-all duration-300 rounded-xl p-5 border border-white/10 shadow-md">
-            <h2 className="text-2xl font-semibold text-blue-300 mb-2">Professional Activities</h2>
+            <h2 className="text-2xl font-semibold text-blue-300 mb-2 flex items-center gap-3">
+              <span className="w-3 h-3 rounded-full inline-block from-blue-500 to-purple-600 bg-gradient-to-r"></span>
+              Professional Activities
+            </h2>
             <ul className="list-disc list-inside text-gray-200 space-y-2">
               <li><strong>Peer Reviewer</strong> for <em>npj Computational Materials</em>, <em>Scientific Reports</em>, <em>Computational Condensed Matter</em>, <em>The Journal of Physical Chemistry</em> and other international journals in computational materials science.</li>
               <li><strong>Member</strong>, <em>The Minerals, Metals & Materials Society (TMS)</em></li>
@@ -403,9 +388,72 @@ export default function CV() {
             </ul>
           </section>
 
+          {/* Technical Skills */}
+          <section className="bg-white/5 hover:bg-white/10 transition-all duration-300 rounded-xl p-5 border border-white/10 shadow-md">
+            <h2 className="text-2xl font-semibold text-blue-300 mb-2 flex items-center gap-3">
+              <span className="w-3 h-3 rounded-full inline-block from-blue-500 to-purple-600 bg-gradient-to-r"></span>
+              Technical Skills
+            </h2>
+            <ul className="space-y-3 text-gray-200">
+              <li className="grid grid-cols-2 gap-2">
+                <div>
+                  <strong>Computational Methods</strong> <br />
+                  <span className="text-gray-400">VASP, Matlantis, ASE, Pymatgen</span> <br />
+                </div>
+                <div>
+                  <strong>Machine Learning</strong> <br />
+                  <span className="text-gray-400">PyTorch, Pyro, Scikit-learn</span> <br />
+                </div>
+              </li>
+
+              <li className="grid grid-cols-2 gap-2">
+                <div>
+                  <strong className="break-words">Thermodynamics</strong> <br />
+                  <span className="text-gray-400">Thermo-Calc, PyCalphad</span> <br />
+                </div>
+                <div>
+                  <strong>Visualization</strong> <br />
+                  <span className="text-gray-400">Matplotlib, Seaborn, Plotly, VESTA, Origin</span> <br />
+                </div>
+              </li>
+
+              <li className="grid grid-cols-2 gap-2">
+                <div>
+                  <strong>Programming</strong> <br />
+                  <span className="text-gray-400">Python, C#, C++, Javascript</span> <br />
+                </div>
+                <div>
+                  <strong>Data Analysis</strong> <br />
+                  <span className="text-gray-400">Pandas, NumPy, Excel</span> <br />
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          {/* Languages */}
+          <section className="bg-white/5 hover:bg-white/10 transition-all duration-300 rounded-xl p-5 border border-white/10 shadow-md">
+            <h2 className="text-2xl font-semibold text-blue-300 mb-2 flex items-center gap-3">
+              <span className="w-3 h-3 rounded-full inline-block from-blue-500 to-purple-600 bg-gradient-to-r"></span>
+              Languages
+            </h2>
+            <ul className="space-y-3 text-gray-200">
+              <li className="grid grid-cols-2 gap-2">
+                <div>
+                  <strong>Mandarin</strong> - Native <br />
+                </div>
+                <div>
+                  <strong>English</strong> - Fluent <br />
+                </div>
+              </li>
+            </ul>
+          </section>
+
           {/* Publications */}
           <section className="bg-white/5 hover:bg-white/10 transition-all duration-300 rounded-xl p-5 border border-white/10 shadow-md">
-            <h2 className="text-2xl font-semibold text-blue-300 mb-2">Publications</h2>
+            <h2 className="text-2xl font-semibold text-blue-300 mb-2 flex items-center gap-3">
+              <span className="w-3 h-3 rounded-full inline-block from-blue-500 to-purple-600 bg-gradient-to-r"></span>
+              Publications
+            </h2>
             <p className="text-gray-200">
               See full list on the{" "}
               <Link to="/publications" className="text-blue-400 hover:underline">
