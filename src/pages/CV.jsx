@@ -22,14 +22,22 @@ export default function CV() {
         <div className="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/10 shadow-xl w-full max-w-3xl space-y-6">
           <h1 className="text-4xl font-bold mb-6 text-center text-blue-400">Curriculum Vitae</h1>
 
+          {/* Summary */}
+          <section className="bg-white/5 hover:bg-white/10 transition-all duration-300 rounded-xl p-5 border border-white/10 shadow-md">
+            <h2 className="text-2xl font-semibold text-blue-300 mb-2">Summary</h2>
+            <p className="text-gray-200">
+              Ph.D. candidate in Materials Engineering at Worcester Polytechnic Institute, specializing in <strong>machine-learning-accelerated first-principles simulations</strong> for advanced materials design. Research integrates <strong>DFT</strong>, <strong>molecular dynamics</strong>, and <strong>Bayesian active learning</strong> to elucidate structure-property relationships in complex oxides, high-entropy materials, and alloy systems. Developer of multiple <strong>open-source frameworks</strong> — <em>HEA-ML</em>, <em>Interface-Maker</em>, <em>LCO-DOPER</em>, <em>HEP-Explorer</em>, and others — for data-driven discovery of functional materials. Dedicated to advancing computational materials design through interdisciplinary collaboration and open science.
+            </p>
+          </section>
+
           {/* Research Interests */}
           <section className="bg-white/5 hover:bg-white/10 transition-all duration-300 rounded-xl p-5 border border-white/10 shadow-md">
             <h2 className="text-2xl font-semibold text-blue-300 mb-2">Research Interests</h2>
             <ul className="list-disc list-inside text-gray-200 space-y-2">
-              <li>Machine-learning-accelerated atomic simulations for the design and discovery of complex materials.</li>
-              <li>Defect chemistry, doping, and ionic transport in perovskite oxides and high-entropy materials.</li>
-              <li>Computational frameworks for interface modeling and stability prediction.</li>
-              <li>Data-driven alloy design integrating thermodynamics and machine learning.</li>
+              <li><strong>Machine-learning-accelerated atomic simulations</strong> for the design and discovery of complex materials.</li>
+              <li><strong>Defect chemistry, doping, and ionic transport</strong> in perovskite oxides and high-entropy materials.</li>
+              <li><strong>Computational frameworks for interface modeling and stability prediction.</strong></li>
+              <li><strong>Data-driven alloy design</strong> integrating thermodynamics and machine learning.</li>
             </ul>
           </section>
 
@@ -97,10 +105,10 @@ export default function CV() {
               </li>
 
               <ul className="list-disc list-inside text-gray-200 space-y-2">
-                <li>Led the high-entropy alloy (HEA) design effort in the Al-Co-Cr-Fe-Ni system, integrating first-principles calculations and machine learning to map phase stability and elastic properties (<em>High Entropy Alloys & Materials, 2024</em>).</li>
-                <li>Developed machine-learning-accelerated atomic simulation frameworks integrating DFT, molecular dynamics, neural network potentials, and Bayesian active learning to efficiently predict formation energies, diffusion coefficients, and oxygenvacancy energetics in complex oxides with DFT-level accuracy.</li>
-                <li>Published 7 first-author and co-author papers in <em>High Entropy Alloys & Materials</em>, <em>Materials Today Physics</em>, <em>Materials Today Communication</em>, <em>Journal of Alloys and Compounds</em>, etc.</li>
-                <li>Created 4 open-source research platforms:</li>
+                <li>Led the <strong>high-entropy alloy (HEA)</strong> design effort in the Al-Co-Cr-Fe-Ni system, integrating first-principles calculations and machine learning to map phase stability and elastic properties (<em>High Entropy Alloys & Materials, 2024</em>).</li>
+                <li>Developed <strong>machine-learning-accelerated atomic simulation frameworks</strong> integrating DFT, molecular dynamics, neural network potentials, and Bayesian active learning to efficiently predict formation energies, diffusion coefficients, and oxygenvacancy energetics in complex oxides with DFT-level accuracy.</li>
+                <li>Published <strong>7 first-author and co-author papers</strong> in <em>High Entropy Alloys & Materials</em>, <em>Materials Today Physics</em>, <em>Materials Today Communication</em>, <em>Journal of Alloys and Compounds</em>, etc.</li>
+                <li>Created <strong>4 open-source research platforms</strong>:</li>
                 <ul className="list-disc list-inside text-gray-200 ml-5 space-y-2">
                   <li><strong>HEP-Explorer:</strong> a multi-target Bayesian neural network platform for investigating substitutional effects in high-entropy perovskites (HEPs), incorporating Pareto-front screening for property trade-offs.</li>
                   <li><strong>LCO-Doper:</strong> an active-learning framework for dopant optimization in LaCoO₃, revealing composition-structure-property relationships governing lattice distortion and ionic conductivity.</li>
@@ -133,8 +141,8 @@ export default function CV() {
               </li>
 
               <ul className="list-disc list-inside text-gray-200 space-y-2">
-                <li>Developed <strong>Alloy-Supermarket</strong>, an open-source platform that couples Thermo-Calc and machine learning to design Scmodified A356 Al-Si-Mg casting alloys by linking composition, microstructure, and mechanical properties.</li>
-                <li>Published 2 first-author papers in <em>JMST</em> and <em>Materials Today Communications</em>.</li>
+                <li>Developed <strong>Alloy-Supermarket</strong>, an open-source platform that couples <strong>Thermo-Calc</strong> and <strong>machine learning</strong> to design Scmodified A356 Al-Si-Mg casting alloys by linking composition, microstructure, and mechanical properties.</li>
+                <li>Published <strong>2 first-author papers</strong> in <em>JMST</em> and <em>Materials Today Communications</em>.</li>
               </ul>
               
             </ul>
