@@ -119,7 +119,7 @@ export default function CV() {
               <ul className="list-disc list-inside text-gray-200 space-y-2">
                 <li>Led the <strong>high-entropy alloy (HEA)</strong> design effort in the Al-Co-Cr-Fe-Ni system, integrating first-principles calculations and machine learning to map phase stability and elastic properties (<em>High Entropy Alloys & Materials, 2024</em>).</li>
                 <li>Developed <strong>machine-learning-accelerated atomic simulation frameworks</strong> integrating DFT, molecular dynamics, neural network potentials, and Bayesian active learning to efficiently predict formation energies, diffusion coefficients, and oxygenvacancy energetics in complex oxides with DFT-level accuracy.</li>
-                <li>Published <strong>7 first-author and co-author papers</strong> in <em>High Entropy Alloys & Materials</em>, <em>Materials Today Physics</em>, <em>Materials Today Communication</em>, <em>Journal of Alloys and Compounds</em>, etc.</li>
+                <li>Published <strong>9 first-author and co-author papers</strong> in <em>High Entropy Alloys & Materials</em>, <em>Materials Today Physics</em>, <em>Materials Today Communication</em>, <em>Journal of Alloys and Compounds</em>, etc.</li>
                 <li>Created <strong>4 open-source research platforms</strong>:</li>
                 <ul className="list-disc list-inside text-gray-200 ml-5 space-y-2">
                   <li><strong>HEP-Explorer:</strong> a multi-target Bayesian neural network platform for investigating substitutional effects in high-entropy perovskites (HEPs), incorporating Pareto-front screening for property trade-offs.</li>
