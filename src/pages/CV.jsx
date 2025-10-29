@@ -128,8 +128,8 @@ export default function CV() {
                 <ul className="list-disc list-inside text-gray-200 ml-5 space-y-2">
                   <li><strong>HEA-ML:</strong> a framework combining first-principles calculations and machine learning for phase stability and mechanical property prediction in Al-Co-Cr-Fe-Ni high-entropy alloys.</li>
                   <li><strong>Interface-Maker:</strong> a lattice-matching and interface-generation tool coupling ML potentials with DFT to model LaCoO₃/La₂NiO₄ interfaces, achieving over tenfold efficiency improvement in interfacial energy exploration.</li>
-                  <li><strong>LCO-Doper:</strong> an active-learning framework for dopant optimization in LaCoO₃, revealing composition-structure-property relationships governing lattice distortion and ionic conductivity.</li>
-                  <li><strong>HEP-Explorer:</strong> a multi-target Bayesian neural network platform for investigating substitutional effects in high-entropy perovskites, incorporating Pareto-front screening for property trade-offs.</li>
+                  <li><strong>LCO-Doper:</strong> an active-learning framework for dopant optimization in LaCoO₃ (LCO), revealing composition-structure-property relationships governing lattice distortion and ionic conductivity.</li>
+                  <li><strong>HEP-Explorer:</strong> a multi-target Bayesian neural network platform for investigating substitutional effects in high-entropy perovskites (HEP), incorporating Pareto-front screening for property trade-offs.</li>
                 </ul>
               </ul>
 
