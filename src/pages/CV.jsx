@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Sidebar from '../components/Sidebar.jsx'
-import { Link2Icon } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 
 export default function CV() {
   return (
@@ -22,13 +22,18 @@ export default function CV() {
         <div className="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/10 shadow-xl w-full max-w-3xl space-y-6">
           <h1 className="text-4xl font-bold mb-6 text-center text-blue-400">Curriculum Vitae</h1>
 
+          {/* Research Interests */}
           <section className="bg-white/5 hover:bg-white/10 transition-all duration-300 rounded-xl p-5 border border-white/10 shadow-md">
             <h2 className="text-2xl font-semibold text-blue-300 mb-2">Research Interests</h2>
-            <p className="text-gray-200 mb-4 text-justify">
-              Ph.D. candidate in Materials Engineering at Worcester Polytechnic Institute, specializing in computational materials design through the integration of first-principles calculations and machine learning. Research centers on exploring structure-property relationships and enabling accelerated discovery of advanced functional materials. Supported by a strong publication record and experience in interdisciplinary collaboration across theory, simulation, and data-driven approaches.
-            </p>
+            <ul className="list-disc list-inside text-gray-200 space-y-2">
+              <li>Machine-learning-accelerated atomic simulations for the design and discovery of complex materials.</li>
+              <li>Defect chemistry, doping, and ionic transport in perovskite oxides and high-entropy materials.</li>
+              <li>Computational frameworks for interface modeling and stability prediction.</li>
+              <li>Data-driven alloy design integrating thermodynamics and machine learning.</li>
+            </ul>
           </section>
 
+          {/* Education */}
           <section className="bg-white/5 hover:bg-white/10 transition-all duration-300 rounded-xl p-5 border border-white/10 shadow-md">
             <h2 className="text-2xl font-semibold text-blue-300 mb-2">Education</h2>
             <ul className="space-y-3 text-gray-200">
@@ -38,8 +43,8 @@ export default function CV() {
                   <span className="text-gray-400">Materials Engineering</span>
                 </div>
                 <div className="text-right">
-                  <strong>Ph.D.</strong> <br />
-                  <span className="text-gray-400">Aug 2021 – Present</span>
+                  <strong>2021 - Present</strong> <br />
+                  <span className="text-gray-400">Ph.D.</span>
                 </div>
               </li>
 
@@ -49,8 +54,8 @@ export default function CV() {
                   <span className="text-gray-400">Materials Engineering</span>
                 </div>
                 <div className="text-right">
-                  <strong>M.S.</strong> <br />
-                  <span className="text-gray-400">Aug 2018 – Jun 2021</span>
+                  <strong>2018 - 2021</strong> <br />
+                  <span className="text-gray-400">M.S.</span>
                 </div>
               </li>
 
@@ -60,22 +65,98 @@ export default function CV() {
                   <span className="text-gray-400">Powder Materials Science & Engineering</span>
                 </div>
                 <div className="text-right">
-                  <strong>B.S.</strong> <br />
-                  <span className="text-gray-400">Aug 2014 – Jun 2018</span>
+                  <strong>2014 - 2018</strong> <br />
+                  <span className="text-gray-400">B.S.</span>
                 </div>
               </li>
             </ul>
           </section>
 
+          {/* Research Experiences */}
           <section className="bg-white/5 hover:bg-white/10 transition-all duration-300 rounded-xl p-5 border border-white/10 shadow-md">
-            <h2 className="text-2xl font-semibold text-blue-300 mb-2">Projects</h2>
+            <h2 className="text-2xl font-semibold text-blue-300 mb-2">Research Experiences</h2>
+            <ul className="space-y-3 text-gray-200">
+              <li className="grid grid-cols-2 gap-2">
+                <div>
+                  <strong> 
+                    <a
+                      href="https://wp.wpi.edu/impd/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center hover:hover:underline break-words"
+                    >
+                      IMPD Group | Advisor: Prof. Yu Zhong<ExternalLink className="w-4 h-4 ml-1" />
+                    </a>
+                  </strong> <br />
+                  <span className="text-gray-400">Worcester Polytechnic Institute, USA</span>
+                </div>
+                <div className="text-right">
+                  <strong>2021 - Present</strong> <br />
+                  <span className="text-gray-400">Research Assistant</span>
+                </div>
+              </li>
+
+              <ul className="list-disc list-inside text-gray-200 space-y-2">
+                <li>Led the high-entropy alloy (HEA) design effort in the Al-Co-Cr-Fe-Ni system, integrating first-principles calculations and machine learning to map phase stability and elastic properties (<em>High Entropy Alloys & Materials, 2024</em>).</li>
+                <li>Developed machine-learning-accelerated atomic simulation frameworks integrating DFT, molecular dynamics, neural network potentials, and Bayesian active learning to efficiently predict formation energies, diffusion coefficients, and oxygenvacancy energetics in complex oxides with DFT-level accuracy.</li>
+                <li>Published 7 first-author and co-author papers in <em>High Entropy Alloys & Materials</em>, <em>Materials Today Physics</em>, <em>Materials Today Communication</em>, <em>Journal of Alloys and Compounds</em>, etc.</li>
+                <li>Created 4 open-source research platforms:</li>
+                <ul className="list-disc list-inside text-gray-200 ml-5 space-y-2">
+                  <li><strong>HEP-Explorer:</strong> a multi-target Bayesian neural network platform for investigating substitutional effects in high-entropy perovskites (HEPs), incorporating Pareto-front screening for property trade-offs.</li>
+                  <li><strong>LCO-Doper:</strong> an active-learning framework for dopant optimization in LaCoO₃, revealing composition-structure-property relationships governing lattice distortion and ionic conductivity.</li>
+                  <li><strong>Interface-Maker:</strong> a lattice-matching and interface-generation tool coupling ML potentials with DFT to model LaCoO₃/La₂NiO₄ interfaces, achieving over tenfold efficiency improvement in interfacial energy exploration.</li>
+                  <li><strong>HEA-ML:</strong> a framework combining first-principles calculations and machine learning for phase stability and mechanical property prediction in Al-Co-Cr-Fe-Ni high-entropy alloys.</li>
+                </ul>
+              </ul>
+
+              {/* Add a horizontal line */}
+              <hr className="my-4 border-gray-400" />
+
+              <li className="grid grid-cols-2 gap-2">
+                <div>
+                  <strong> 
+                    <a
+                      href="https://ppmgroupcn.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center hover:hover:underline break-words"
+                    >
+                      PPM Group | Advisor: Prof. Lijun Zhang<ExternalLink className="w-4 h-4 ml-1" />
+                    </a>
+                  </strong> <br />
+                  <span className="text-gray-400">Central South University, China</span>
+                </div>
+                <div className="text-right">
+                  <strong>2018 - 2021</strong> <br />
+                  <span className="text-gray-400">M.S. Researcher</span>
+                </div>
+              </li>
+
+              <ul className="list-disc list-inside text-gray-200 space-y-2">
+                <li>Developed <strong>Alloy-Supermarket</strong>, an open-source platform that couples Thermo-Calc and machine learning to design Scmodified A356 Al-Si-Mg casting alloys by linking composition, microstructure, and mechanical properties.</li>
+                <li>Published 2 first-author papers in <em>JMST</em> and <em>Materials Today Communications</em>.</li>
+              </ul>
+              
+            </ul>
+          </section>
+
+          {/* Research Projects */}
+          <section className="bg-white/5 hover:bg-white/10 transition-all duration-300 rounded-xl p-5 border border-white/10 shadow-md">
+            <h2 className="text-2xl font-semibold text-blue-300 mb-2">Research Projects</h2>
             <ul className="space-y-3 text-gray-200">
               <li className="grid grid-cols-1 md:grid-cols-[5fr_1fr] gap-2 items-start">
                 <div>
-                  <strong>HEP-Explorer</strong> <br />
+                  <strong> 
+                    <a
+                      href="https://github.com/aguang5241/HEP-Explorer/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center hover:hover:underline break-words"
+                    >
+                      HEP-Explorer<ExternalLink className="w-4 h-4 ml-1" />
+                    </a>
+                  </strong> <br />
                   <span className="text-gray-400">An application for analyzing substitutional effects in ABO₃ high-entropy perovskites (HEPs), supporting compositional screening, property prediction, and performance optimization.</span> <br />
-                  <Link2Icon className="inline w-4 h-4 text-blue-400 mr-1" />
-                  <a href="https://github.com/aguang5241/HEP-Explorer" className="text-gray-400 hover:underline break-words">https://github.com/aguang5241/HEP-Explorer</a>
                 </div>
                 <div className="text-right">
                   <strong>2025</strong>
@@ -84,10 +165,17 @@ export default function CV() {
 
               <li className="grid grid-cols-1 md:grid-cols-[5fr_1fr] gap-2 items-start">
                 <div>
-                  <strong>LCO-Doper</strong> <br />
+                  <strong> 
+                    <a
+                      href="https://github.com/aguang5241/LCO-Doper/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center hover:hover:underline break-words"
+                    >
+                      LCO-Doper<ExternalLink className="w-4 h-4 ml-1" />
+                    </a>
+                  </strong> <br />
                   <span className="text-gray-400">An application for analyzing dopant effects on LaCoO₃ (LCO), supporting composition optimization and material performance enhancement.</span> <br />
-                  <Link2Icon className="inline w-4 h-4 text-blue-400 mr-1" />
-                  <a href="https://github.com/aguang5241/LCO-Doper" className="text-gray-400 hover:underline break-words">https://github.com/aguang5241/LCO-Doper</a>
                 </div>
                 <div className="text-right">
                   <strong>2025</strong>
@@ -96,10 +184,17 @@ export default function CV() {
 
               <li className="grid grid-cols-1 md:grid-cols-[5fr_1fr] gap-2 items-start">
                 <div>
-                  <strong>Interface-Maker</strong> <br />
+                  <strong> 
+                    <a
+                      href="https://github.com/aguang5241/Interface-Maker/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center hover:hover:underline break-words"
+                    >
+                      Interface-Maker<ExternalLink className="w-4 h-4 ml-1" />
+                    </a>
+                  </strong> <br />
                   <span className="text-gray-400">An application for generating customizable slabs and interfaces for first-principles simulations.</span> <br />
-                  <Link2Icon className="inline w-4 h-4 text-blue-400 mr-1" />
-                  <a href="https://github.com/aguang5241/Interface-Maker" className="text-gray-400 hover:underline break-words">https://github.com/aguang5241/Interface-Maker</a>
                 </div>
                 <div className="text-right">
                   <strong>2025</strong>
@@ -108,10 +203,17 @@ export default function CV() {
 
               <li className="grid grid-cols-1 md:grid-cols-[5fr_1fr] gap-2 items-start">
                 <div>
-                  <strong>HEA-ML</strong> <br />
+                  <strong> 
+                    <a
+                      href="https://github.com/aguang5241/HEA-ML/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center hover:hover:underline break-words"
+                    >
+                      HEA-ML<ExternalLink className="w-4 h-4 ml-1" />
+                    </a>
+                  </strong> <br />
                   <span className="text-gray-400">An application for designing Al-Fe-Co-Cr-Ni high-entropy alloys by combining first-principles calculations and machine learning.</span> <br />
-                  <Link2Icon className="inline w-4 h-4 text-blue-400 mr-1" />
-                  <a href="https://github.com/aguang5241/HEA-ML" className="text-gray-400 hover:underline break-words">https://github.com/aguang5241/HEA-ML</a>
                 </div>
                 <div className="text-right">
                   <strong>2024</strong>
@@ -120,10 +222,17 @@ export default function CV() {
 
               <li className="grid grid-cols-1 md:grid-cols-[5fr_1fr] gap-2 items-start">
                 <div>
-                  <strong>Alloy-Supermarket</strong> <br />
+                  <strong> 
+                    <a
+                      href="https://github.com/aguang5241/Alloy-Supermarket/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center hover:hover:underline break-words"
+                    >
+                      Alloy-Supermarket<ExternalLink className="w-4 h-4 ml-1" />
+                    </a>
+                  </strong> <br />
                   <span className="text-gray-400">An application that integrates computational thermodynamics and machine learning for Sc-modified Al-Si-Mg alloy design.</span> <br />
-                  <Link2Icon className="inline w-4 h-4 text-blue-400 mr-1" />
-                  <a href="https://github.com/aguang5241/Alloy-Supermarket" className="text-gray-400 hover:underline break-words">https://github.com/aguang5241/Alloy-Supermarket</a>
                 </div>
                 <div className="text-right">
                   <strong>2022</strong>
@@ -132,46 +241,9 @@ export default function CV() {
             </ul>
           </section>
 
+          {/* Awards & Honors */}
           <section className="bg-white/5 hover:bg-white/10 transition-all duration-300 rounded-xl p-5 border border-white/10 shadow-md">
-            <h2 className="text-2xl font-semibold text-blue-300 mb-2">Skills</h2>
-            <ul className="space-y-3 text-gray-200">
-              <li className="grid grid-cols-2 gap-2">
-                <div>
-                  <strong>First-Principles Calculations</strong> <br />
-                  <span className="text-gray-400">VASP, VESTA, ASE, Pymatgen</span> <br />
-                </div>
-                <div>
-                  <strong>Machine Learning</strong> <br />
-                  <span className="text-gray-400">PyTorch, Scikit-learn, SciPy, NumPy, Pandas</span> <br />
-                </div>
-              </li>
-
-              <li className="grid grid-cols-2 gap-2">
-                <div>
-                  <strong>Programming</strong> <br />
-                  <span className="text-gray-400">Python, C#, C++, Javascript</span> <br />
-                </div>
-                <div>
-                  <strong>Molecular Dynamics</strong> <br />
-                  <span className="text-gray-400">Matlantis, LAMMPS</span> <br />
-                </div>
-              </li>
-
-              <li className="grid grid-cols-2 gap-2">
-                <div>
-                  <strong className="break-words">Thermodynamics</strong> <br />
-                  <span className="text-gray-400">ThermoCalc, Pandat</span> <br />
-                </div>
-                <div>
-                  <strong>Data Visualization</strong> <br />
-                  <span className="text-gray-400">Matplotlib, Seaborn, Plotly</span> <br />
-                </div>
-              </li>
-            </ul>
-          </section>
-
-          <section className="bg-white/5 hover:bg-white/10 transition-all duration-300 rounded-xl p-5 border border-white/10 shadow-md">
-            <h2 className="text-2xl font-semibold text-blue-300 mb-2">Awards</h2>
+            <h2 className="text-2xl font-semibold text-blue-300 mb-2">Awards & Honors</h2>
             <ul className="space-y-3 text-gray-200">
               <li className="grid grid-cols-[5fr_1fr] gap-2">
                 <div>
@@ -179,7 +251,7 @@ export default function CV() {
                   <span className="text-gray-400">CALPHAD</span> <br />
                 </div>
                 <div className="text-right">
-                  <strong>Jun 2023</strong>
+                  <strong>2023</strong>
                 </div>
               </li>
 
@@ -189,7 +261,7 @@ export default function CV() {
                   <span className="text-gray-400">Xiamen Golden Egret Special Alloy Co., LTD.</span> <br />
                 </div>
                 <div className="text-right">
-                  <strong>Dec 2020</strong>
+                  <strong>2020</strong>
                 </div>
               </li>
 
@@ -199,22 +271,131 @@ export default function CV() {
                   <span className="text-gray-400">Hunan Education Department</span> <br />
                 </div>
                 <div className="text-right">
-                  <strong>Dec 2020</strong>
+                  <strong>2020</strong>
                 </div>
               </li>
 
               <li className="grid grid-cols-[5fr_1fr] gap-2">
                 <div>
-                  <strong>Best Poster Award – First Prize</strong> <br />
+                  <strong>Best Poster Award - First Prize</strong> <br />
                   <span className="text-gray-400">Graduate School of Central South University</span> <br />
                 </div>
                 <div className="text-right">
-                  <strong>Dec 2020</strong>
+                  <strong>2020</strong>
                 </div>
               </li>
             </ul>
           </section>
 
+          {/* Technical Skills */}
+          <section className="bg-white/5 hover:bg-white/10 transition-all duration-300 rounded-xl p-5 border border-white/10 shadow-md">
+            <h2 className="text-2xl font-semibold text-blue-300 mb-2">Technical Skills</h2>
+            <ul className="space-y-3 text-gray-200">
+              <li className="grid grid-cols-2 gap-2">
+                <div>
+                  <strong>Computational Methods</strong> <br />
+                  <span className="text-gray-400">VASP, Matlantis, ASE, Pymatgen</span> <br />
+                </div>
+                <div>
+                  <strong>Machine Learning</strong> <br />
+                  <span className="text-gray-400">PyTorch, Pyro, Scikit-learn</span> <br />
+                </div>
+              </li>
+
+              <li className="grid grid-cols-2 gap-2">
+                <div>
+                  <strong className="break-words">Thermodynamics</strong> <br />
+                  <span className="text-gray-400">Thermo-Calc, PyCalphad</span> <br />
+                </div>
+                <div>
+                  <strong>Visualization</strong> <br />
+                  <span className="text-gray-400">Matplotlib, Seaborn, Plotly, VESTA, Origin</span> <br />
+                </div>
+              </li>
+
+              <li className="grid grid-cols-2 gap-2">
+                <div>
+                  <strong>Programming</strong> <br />
+                  <span className="text-gray-400">Python, C#, C++, Javascript</span> <br />
+                </div>
+                <div>
+                  <strong>Data Analysis</strong> <br />
+                  <span className="text-gray-400">Pandas, NumPy, Excel</span> <br />
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          {/* Teaching & Mentoring */}
+          <section className="bg-white/5 hover:bg-white/10 transition-all duration-300 rounded-xl p-5 border border-white/10 shadow-md">
+            <h2 className="text-2xl font-semibold text-blue-300 mb-2">Teaching & Mentoring</h2>
+            <ul className="space-y-3 text-gray-200">
+              <li className="grid grid-cols-2 gap-2">
+                <div>
+                  <strong>Major Qualifying Project (MQP)</strong> <br />
+                  <span className="text-gray-400">Worcester Polytechnic Institute, USA</span>
+                </div>
+                <div className="text-right">
+                  <strong>Research Mentor</strong> <br />
+                  <span className="text-gray-400">Aug 2024 - Dec 2024</span>
+                </div>
+              </li>
+
+              <li className="grid grid-cols-2 gap-2">
+                <div>
+                  <strong>ME 4875 - Introduction To Nanomaterials And Nanotechnology</strong> <br />
+                  <span className="text-gray-400">Worcester Polytechnic Institute, USA</span>
+                </div>
+                <div className="text-right">
+                  <strong>Teaching Assistant</strong> <br />
+                  <span className="text-gray-400">Mar 2024 - May 2024</span>
+                </div>
+              </li>
+
+              <li className="grid grid-cols-2 gap-2">
+                <div>
+                  <strong>ME 5385 - Metal Additive Manufacturing</strong> <br />
+                  <span className="text-gray-400">Worcester Polytechnic Institute, USA</span>
+                </div>
+                <div className="text-right">
+                  <strong>Teaching Assistant</strong> <br />
+                  <span className="text-gray-400">Jan 2024 - Mar 2024</span>
+                </div>
+              </li>
+
+              <li className="grid grid-cols-2 gap-2">
+                <div>
+                  <strong>MTE 594-D01 - ST: Applied Machine Learning</strong> <br />
+                  <span className="text-gray-400">Worcester Polytechnic Institute, USA</span>
+                </div>
+                <div className="text-right">
+                  <strong>Teaching Assistant</strong> <br />
+                  <span className="text-gray-400">Mar 2022 - May 2022</span>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          {/* Professional Activities */}
+          <section className="bg-white/5 hover:bg-white/10 transition-all duration-300 rounded-xl p-5 border border-white/10 shadow-md">
+            <h2 className="text-2xl font-semibold text-blue-300 mb-2">Professional Activities</h2>
+            <ul className="list-disc list-inside text-gray-200 space-y-2">
+              <li><strong>Peer Reviewer</strong> for <em>npj Computational Materials</em>, <em>Scientific Reports</em>, <em>Computational Condensed Matter</em>, <em>The Journal of Physical Chemistry</em> and other international journals in computational materials science.</li>
+              <li><strong>Member</strong>, <em>The Minerals, Metals & Materials Society (TMS)</em></li>
+              <li><strong>Conference Organizer</strong>, <em>CALPHAD 2023</em></li>
+              <li><strong>Conference Presentations and Posters:</strong></li>
+              <ul className="list-disc list-inside text-gray-200 ml-5 space-y-2">
+                <li>Oral Presentation | <em>MS&T 2025</em></li>
+                <li>Poster Presentation | <em>WPI Graduate Research Innovation Exchange (GRIE) 2025</em></li>
+                <li>Oral Presentation | <em>CALPHAD 2024</em></li>
+                <li>Oral Presentation | <em>3rd World Congress on High Entropy Alloys 2023</em></li>
+                <li>Oral Presentation | <em>MS&T 2022</em></li>
+                <li>Poster Presentation | <em>Gordon Conference 2022</em></li>
+              </ul>
+            </ul>
+          </section>
+
+          {/* Publications */}
           <section className="bg-white/5 hover:bg-white/10 transition-all duration-300 rounded-xl p-5 border border-white/10 shadow-md">
             <h2 className="text-2xl font-semibold text-blue-300 mb-2">Publications</h2>
             <p className="text-gray-200">
