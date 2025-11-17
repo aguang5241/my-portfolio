@@ -25,7 +25,7 @@ export default function CV() {
           {/* Download CV */}
           <div className="flex justify-center gap-4 mb-6">
             <a
-              href="/academic-resume.pdf"
+              href="./academic-resume.pdf"
               download="Guangchen_Liu_Academic_CV.pdf"
               className="px-3 py-1 text-sm bg-blue-400 hover:bg-blue-500 text-white rounded-lg shadow-md transition-all duration-300 flex items-center gap-2"
             >
@@ -33,7 +33,7 @@ export default function CV() {
             </a>
 
             <a
-              href="/industry-resume.pdf"
+              href="./industry-resume.pdf"
               download="Guangchen_Liu_Industry_CV.pdf"
               className="px-3 py-1 text-sm bg-purple-400 hover:bg-purple-500 text-white rounded-lg shadow-md transition-all duration-300 flex items-center gap-2"
             >
