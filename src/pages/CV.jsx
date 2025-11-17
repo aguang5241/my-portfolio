@@ -22,6 +22,25 @@ export default function CV() {
         <div className="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/10 shadow-xl w-full max-w-3xl space-y-6">
           <h1 className="text-4xl font-bold mb-6 text-center text-blue-400">Curriculum Vitae</h1>
 
+          {/* Download CV */}
+          <div className="flex justify-center gap-4 mb-6">
+            <a
+              href="/academic-resume.pdf"
+              download="Guangchen_Liu_Academic_CV.pdf"
+              className="px-3 py-1 text-sm bg-blue-400 hover:bg-blue-500 text-white rounded-lg shadow-md transition-all duration-300 flex items-center gap-2"
+            >
+              <ExternalLink className="w-4 h-4" /> Download Academic CV
+            </a>
+
+            <a
+              href="/industry-resume.pdf"
+              download="Guangchen_Liu_Industry_CV.pdf"
+              className="px-3 py-1 text-sm bg-purple-400 hover:bg-purple-500 text-white rounded-lg shadow-md transition-all duration-300 flex items-center gap-2"
+            >
+              <ExternalLink className="w-4 h-4" /> Download Industry CV
+            </a>
+          </div>
+
           {/* Summary */}
           <section className="bg-white/5 hover:bg-white/10 transition-all duration-300 rounded-xl p-5 border border-white/10 shadow-md">
             <h2 className="text-2xl font-semibold text-blue-300 mb-2 flex items-center gap-3">
