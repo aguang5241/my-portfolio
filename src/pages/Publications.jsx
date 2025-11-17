@@ -21,7 +21,7 @@ export default function Publications() {
     {
       title:
         "A Computational Framework for Interface Design Using Lattice Matching, Machine Learning Potentials, and Active Learning: A Case Study on LaCoO3/La2NiO4",
-      journal: "Materials Today Physics (Accepted)",
+      journal: "Materials Today Physics",
       year: 2025,
       link: "https://doi.org/10.1016/j.mtphys.2025.101940",
     },
