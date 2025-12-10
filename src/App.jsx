@@ -16,7 +16,7 @@ const applications = [
     id: 0,
     name: 'Masgent',
     title: 'Masgent: Materials Simulation Agent',
-    description: 'Masgent is a materials simulation AI agent that streamlines DFT workflows and analysis, fast machine-learning-potential (MLP) simulations, and lightweight ML modeling for materials science.',
+    description: 'An  AI agent for materials simulation that streamlines DFT workflows and analysis, fast machine-learning-potential (MLP) simulations, and lightweight ML modeling for materials science.',
     icon: Bot,
     color: 'from-fuchsia-500 to-purple-600',
     features: ['AI Agent', 'Computational Materials', 'Machine Learning Potentials', 'Machine Learning Models']

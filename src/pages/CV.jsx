@@ -40,7 +40,7 @@ export default function CV() {
               Summary
             </h2>
             <p className="text-gray-200">
-              Ph.D. candidate in Materials Engineering at Worcester Polytechnic Institute, specializing in <strong>machine-learning-accelerated first-principles simulations</strong> for advanced materials design. Research integrates <strong>DFT</strong>, <strong>molecular dynamics</strong>, and <strong>active learning</strong> to elucidate structure-property relationships in complex oxides, high-entropy materials, and alloy systems. Developer of <strong>open-source frameworks</strong>, including <em>HEA-ML</em>, <em>Interface-Maker</em>, <em>LCO-Doper</em>, and <em>HEP-Explorer</em> for data-driven discovery of functional materials.
+              Ph.D. candidate in Materials Engineering at Worcester Polytechnic Institute, specializing in <strong>machine-learning-accelerated first-principles simulations</strong> for advanced materials design. Research integrates <strong>DFT</strong>, <strong>molecular dynamics</strong>, and <strong>active learning</strong> to elucidate structure-property relationships in complex oxides, high-entropy materials, and alloy systems. Developer of multiple <strong>open-source frameworks</strong>, including <em>HEA-ML</em>, <em>Interface-Maker</em>, <em>LCO-Doper</em>, <em>HEP-Explorer</em> and <em>Masgent</em> for data-driven discovery and design of novel materials.
             </p>
           </section>
 
@@ -51,7 +51,7 @@ export default function CV() {
               Research Interests
             </h2>
             <ul className="list-disc list-inside text-gray-200 space-y-2">
-              <li><strong>Machine-learning-accelerated atomic simulations</strong> for the design and discovery of complex materials.</li>
+              <li><strong>Machine-learning-accelerated atomic simulations</strong> for the discovery and design of complex materials.</li>
               <li><strong>Defect chemistry, doping, and ionic transport</strong> in perovskite oxides and high-entropy materials.</li>
               <li><strong>Computational frameworks for interface modeling and stability prediction.</strong></li>
               <li><strong>Data-driven alloy design</strong> integrating thermodynamics and machine learning.</li>
@@ -128,20 +128,14 @@ export default function CV() {
               </li>
 
               <p className="text-gray-200">
-                Ph.D. research focuses on integrating first-principles calculations, molecular dynamics, and machine learning to accelerate the design and discovery of complex oxides, interfaces, and high-entropy materials.
+                Ph.D. research focuses on integrating first-principles calculations, molecular dynamics, and machine learning to accelerate the discovery of complex oxides, interfaces, and high-entropy materials.
               </p>
 
               <ul className="list-disc list-inside text-gray-200 space-y-2">
-                <li>Led the <strong>high-entropy alloy (HEA)</strong> design effort in the Al-Co-Cr-Fe-Ni system, integrating first-principles calculations and machine learning to map phase stability and elastic properties.</li>
-                <li>Developed <strong>machine-learning-accelerated atomic simulation frameworks</strong> integrating DFT, molecular dynamics, neural network potentials, and Bayesian active learning to efficiently predict formation energies, diffusion coefficients, and oxygenvacancy energetics in complex oxides with DFT-level accuracy.</li>
-                <li>Published <strong>9 first-author and co-author papers</strong> in <em>High Entropy Alloys & Materials</em>, <em>Materials Today Physics</em>, <em>Materials Today Communication</em>, <em>Journal of Alloys and Compounds</em>, etc.</li>
-                <li>Created <strong>4 open-source research platforms</strong>:</li>
-                <ul className="list-disc list-inside text-gray-200 ml-5 space-y-2">
-                  <li><strong>HEA-ML:</strong> a framework combining first-principles calculations and machine learning for phase stability and mechanical property prediction in Al-Co-Cr-Fe-Ni high-entropy alloys.</li>
-                  <li><strong>Interface-Maker:</strong> a lattice-matching and interface-generation tool coupling ML potentials with DFT to model LaCoO₃/La₂NiO₄ interfaces, achieving over tenfold efficiency improvement in interfacial energy exploration.</li>
-                  <li><strong>LCO-Doper:</strong> an active-learning framework for dopant optimization in LaCoO₃ (LCO), revealing composition-structure-property relationships governing lattice distortion and ionic conductivity.</li>
-                  <li><strong>HEP-Explorer:</strong> a multi-target Bayesian neural network platform for investigating substitutional effects in high-entropy perovskites (HEP), incorporating Pareto-front screening for property trade-offs.</li>
-                </ul>
+                <li>Developed several <strong>machine-learning-accelerated atomic simulation frameworks</strong> integrating ML potentials and active learning to predict structural stability and conductivity with DFT-level accuracy.</li>
+                <li>Developed an <strong>AI agent for materials simulation</strong>, automating structural handling, VASP input generation, workflow preparation & analysis, and rapid property prediction.</li>
+                <li>Designed and deployed multiple open-source frameworks including <em>HEA-ML</em>, <em>Interface-Maker</em>, <em>LCO-Doper</em>, <em>HEP-Explorer</em>, and <em>Masgent</em></li>
+                <li>Authored and co-authored <strong>7 peer-reviewed papers</strong> in <em>High Entropy Alloys & Materials</em>, <em>Materials Today Physics</em>, <em>Materials Today Communication</em>, <em>Journal of Alloys and Compounds</em>, etc.</li>
               </ul>
 
               {/* Add a horizontal line */}
@@ -168,24 +162,43 @@ export default function CV() {
               </li>
 
               <p className="text-gray-200">
-                M.S. work centered on coupling computational thermodynamics with machine learning to optimize aluminum-based casting alloys and understand composition–microstructure–property relationships.
+                M.S. work focused on coupling computational thermodynamics with machine learning to optimize aluminum-based casting alloys and understand composition-microstructure-property relationships.
               </p>
 
               <ul className="list-disc list-inside text-gray-200 space-y-2">
-                <li>Developed <strong>Alloy-Supermarket</strong>, an open-source platform that couples <strong>Thermo-Calc</strong> and <strong>machine learning</strong> to design Scmodified A356 Al-Si-Mg casting alloys by linking composition, microstructure, and mechanical properties.</li>
-                <li>Published <strong>2 first-author papers</strong> in <em>JMST</em> and <em>Materials Today Communications</em>.</li>
+                <li>Developed <strong>Alloy-Supermarket</strong>, an open-source platform that couples Thermo-Calc and machine learning to design Sc-modified A356 Al-Si-Mg casting alloys.</li>
+                <li>Authored and co-authored <strong>5 peer-reviewed papers</strong> in <em>Journal of Materials Science & Technology</em> and <em>Materials Today Communications</em>, <em>Journal of Materials Informatics</em>, etc.</li>
               </ul>
               
             </ul>
           </section>
 
-          {/* Research Projects */}
+          {/* Selected Projects */}
           <section className="bg-white/5 hover:bg-white/10 transition-all duration-300 rounded-xl p-5 border border-white/10 shadow-md">
             <h2 className="text-2xl font-semibold text-blue-300 mb-2 flex items-center gap-3">
               <span className="w-3 h-3 rounded-full inline-block from-blue-500 to-purple-600 bg-gradient-to-r"></span>
-              Research Projects
+              Selected Projects
             </h2>
             <ul className="space-y-3 text-gray-200">
+              <li className="grid grid-cols-1 md:grid-cols-[5fr_1fr] gap-2 items-start">
+                <div>
+                  <strong> 
+                    <a
+                      href="https://github.com/aguang5241/Masgent/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center hover:hover:underline break-words"
+                    >
+                      Masgent<ExternalLink className="w-4 h-4 ml-1" />
+                    </a>
+                  </strong> <br />
+                  <span className="text-gray-400">An AI agent for materials simulation that streamlines DFT workflows and analysis, fast machine-learning-potential (MLP) simulations, and lightweighted ML modeling for materials science.</span> <br />
+                </div>
+                <div className="text-right">
+                  <strong>2025</strong>
+                </div>
+              </li>
+
               <li className="grid grid-cols-1 md:grid-cols-[5fr_1fr] gap-2 items-start">
                 <div>
                   <strong> 
@@ -414,37 +427,34 @@ export default function CV() {
               Technical Skills
             </h2>
             <ul className="space-y-3 text-gray-200">
-              <li className="grid grid-cols-2 gap-2">
-                <div>
-                  <strong>Computational Methods</strong> <br />
-                  <span className="text-gray-400">VASP, Matlantis, ASE, Pymatgen</span> <br />
-                </div>
-                <div>
-                  <strong>Machine Learning</strong> <br />
-                  <span className="text-gray-400">PyTorch, Pyro, Scikit-learn</span> <br />
-                </div>
+              <li>
+                <strong>Modeling & Simulation</strong> <br />
+                <span className="text-gray-400">DFT (VASP), ASE, Pymatgen, Machine-Learning Potentials, HPC & Workflow Automation</span>
               </li>
 
-              <li className="grid grid-cols-2 gap-2">
-                <div>
-                  <strong className="break-words">Thermodynamics</strong> <br />
-                  <span className="text-gray-400">Thermo-Calc, PyCalphad</span> <br />
-                </div>
-                <div>
-                  <strong>Visualization</strong> <br />
-                  <span className="text-gray-400">Matplotlib, Seaborn, Plotly, VESTA, Origin</span> <br />
-                </div>
+              <li>
+                <strong>Machine Learning & Data Science</strong> <br />
+                <span className="text-gray-400">Active Learning, Bayesian Optimization, AI Agent Development, Neural Networks Potentials</span>
               </li>
 
-              <li className="grid grid-cols-2 gap-2">
-                <div>
-                  <strong>Programming</strong> <br />
-                  <span className="text-gray-400">Python, C#, C++, Javascript</span> <br />
-                </div>
-                <div>
-                  <strong>Data Analysis</strong> <br />
-                  <span className="text-gray-400">Pandas, NumPy, Excel</span> <br />
-                </div>
+              <li>
+                <strong>Materials Informatics & Thermodynamics</strong> <br />
+                <span className="text-gray-400">Thermo-Calc, PyCalphad, CALPHAD</span>
+              </li>
+
+              <li>
+                <strong>Programming & Automation</strong> <br />
+                <span className="text-gray-400">Python, C++, C#, Linux, Markdown, Git, API Development</span>
+              </li>
+
+              <li>
+                <strong>Visualization & Analysis</strong> <br />
+                <span className="text-gray-400">Matplotlib, Seaborn, Plotly, VESTA, Origin, Pandas, Numpy</span>
+              </li>
+
+              <li>
+                <strong>Tools & Platforms</strong> <br />
+                <span className="text-gray-400">VS Code, JupyterLab, GitHub, PyQt5, Streamlit, Slurm, MS Office</span>
               </li>
             </ul>
           </section>
