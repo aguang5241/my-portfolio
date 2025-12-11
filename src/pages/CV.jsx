@@ -25,7 +25,7 @@ export default function CV() {
           {/* Download CV */}
           <div className="flex justify-center gap-4 mb-6">
             <a
-              href="./resume.pdf"
+              href="./academic-resume.pdf"
               download="CV_Guangchen_Liu.pdf"
               className="px-3 py-1 text-sm bg-blue-400 hover:bg-blue-500 text-white rounded-lg shadow-md transition-all duration-300 flex items-center gap-2"
             >
@@ -40,7 +40,7 @@ export default function CV() {
               Summary
             </h2>
             <p className="text-gray-200">
-              Ph.D. candidate in Materials Engineering at Worcester Polytechnic Institute, specializing in <strong>machine-learning-accelerated first-principles simulations</strong> for advanced materials design. Research integrates <strong>DFT</strong>, <strong>molecular dynamics</strong>, and <strong>active learning</strong> to elucidate structure-property relationships in complex oxides, high-entropy materials, and alloy systems. Developer of multiple <strong>open-source frameworks</strong>, including <em>HEA-ML</em>, <em>Interface-Maker</em>, <em>LCO-Doper</em>, <em>HEP-Explorer</em> and <em>Masgent</em> for data-driven discovery and design of novel materials.
+              Ph.D. candidate in Materials Engineering at Worcester Polytechnic Institute, specializing in <strong>machine-learning-accelerated first-principles simulations</strong> for advanced materials design. Research integrates DFT, molecular dynamics, and active learning to elucidate <strong>structure-property relationships in complex oxides, high-entropy materials, and alloy systems</strong>. Developer of multiple open-source frameworks, including <em>HEA-ML</em>, <em>Interface-Maker</em>, <em>LCO-Doper</em>, <em>HEP-Explorer</em> and <em>Masgent</em> for data-driven discovery and design of novel materials.
             </p>
           </section>
 
@@ -134,7 +134,7 @@ export default function CV() {
               <ul className="list-disc list-inside text-gray-200 space-y-2">
                 <li>Developed several <strong>machine-learning-accelerated atomic simulation frameworks</strong> integrating ML potentials and active learning to predict structural stability and conductivity with DFT-level accuracy.</li>
                 <li>Developed an <strong>AI agent for materials simulation</strong>, automating structural handling, VASP input generation, workflow preparation & analysis, and rapid property prediction.</li>
-                <li>Designed and deployed multiple open-source frameworks including <em>HEA-ML</em>, <em>Interface-Maker</em>, <em>LCO-Doper</em>, <em>HEP-Explorer</em>, and <em>Masgent</em></li>
+                <li>Designed and deployed multiple <strong>open-source frameworks</strong> including <em>HEA-ML</em>, <em>Interface-Maker</em>, <em>LCO-Doper</em>, <em>HEP-Explorer</em>, and <em>Masgent</em></li>
                 <li>Authored and co-authored <strong>7 peer-reviewed papers</strong> in <em>High Entropy Alloys & Materials</em>, <em>Materials Today Physics</em>, <em>Materials Today Communication</em>, <em>Journal of Alloys and Compounds</em>, etc.</li>
               </ul>
 
