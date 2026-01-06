@@ -8,7 +8,7 @@ export default function Publications() {
       title:
         "Masgent: An AI-assisted Materials Simulation Agent",
       journal: "Computer Physics Communications (Submitted)",
-      year: 2025,
+      year: 2026,
       link: "https://doi.org/xxx/xxxxxx",
     },
     {
