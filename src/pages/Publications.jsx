@@ -6,8 +6,15 @@ export default function Publications() {
   const publications = [
     {
       title:
+        "Masgent: An AI-assisted Materials Simulation Agent",
+      journal: "Computer Physics Communications (Submitted)",
+      year: 2025,
+      link: "https://doi.org/xxx/xxxxxx",
+    },
+    {
+      title:
         "Substitutional Effects at A- and B-Sites in High-Entropy ABO3 Perovskites: Insights from Machine Learning-Accelerated Simulations and Active Learning",
-      journal: "Journal of Materials Science & Technology (Submitted)",
+      journal: "Materials Today Energy (Submitted)",
       year: 2025,
       link: "https://doi.org/xxx/xxxxxx",
     },
@@ -98,8 +105,8 @@ export default function Publications() {
   ];
 
   // Split the publications
-  const ongoing = publications.slice(0, 2);
-  const published = publications.slice(2);
+  const ongoing = publications.slice(0, 3);
+  const published = publications.slice(3);
 
   return (
     // Background color and animation
