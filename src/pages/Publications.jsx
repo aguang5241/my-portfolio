@@ -9,21 +9,21 @@ export default function Publications() {
         "Masgent: An AI-assisted Materials Simulation Agent",
       journal: "Digital Discovery",
       year: 2026,
-      link: "https://doi.org/xxx/xxxxxx",
+      link: "https://doi.org/10.1039/d6dd00043f",
     },
     {
       title:
         "Substitutional Effects at A- and B-Sites in High-Entropy ABO3 Perovskites: Insights from Machine Learning-Accelerated Simulations and Active Learning",
       journal: "Sustainable Materials and Technologies",
       year: 2026,
-      link: "https://doi.org/xxx/xxxxxx",
+      link: "https://doi.org/10.1016/j.susmat.2026.e02070",
     },
     {
       title:
         "Unraveling Doping Effects in LaCoO3 via Machine Learning-Accelerated Atomic Simulations and Active Learning",
       journal: "Acta Materialia",
       year: 2026,
-      link: "https://doi.org/xxx/xxxxxx",
+      link: "https://doi.org/10.1016/j.actamat.2026.122620",
     },
     {
       title:
@@ -143,7 +143,7 @@ export default function Publications() {
           </p>
 
           {/* In Progress */}
-          <h2 className="text-2xl font-semibold text-green-300 mb-4">
+          {/* <h2 className="text-2xl font-semibold text-green-300 mb-4">
             In Progress
           </h2>
           <ul className="space-y-6">
@@ -158,18 +158,10 @@ export default function Publications() {
                 <p className="text-gray-400 text-sm italic mb-2">
                   {pub.journal}, {pub.year}
                 </p>
-                {/* <a
-                  href={pub.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors text-sm"
-                >
-                  View publication <ExternalLink className="w-4 h-4 ml-1" />
-                </a> */}
               </li>
             ))}
           </ul>
-          <br />
+          <br /> */}
 
 
           {/* Published works */}
