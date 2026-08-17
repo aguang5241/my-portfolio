@@ -40,7 +40,7 @@ export default function CV() {
               Summary
             </h2>
             <p className="text-gray-200">
-              Ph.D. candidate in Materials Engineering at Worcester Polytechnic Institute, specializing in <strong>machine-learning-accelerated first-principles simulations</strong> for advanced materials design. Research integrates DFT, molecular dynamics, and active learning to elucidate <strong>structure-property relationships in complex oxides, high-entropy materials, and alloy systems</strong>. Developer of multiple open-source frameworks, including <em>HEA-ML</em>, <em>Interface-Maker</em>, <em>LCO-Doper</em>, <em>HEP-Explorer</em> and <em>Masgent</em> for data-driven discovery and design of novel materials.
+              Ph.D. in Materials Engineering at Worcester Polytechnic Institute, specializing in <strong>machine-learning-accelerated first-principles simulations</strong> for advanced materials design. Research integrates DFT, molecular dynamics, and active learning to elucidate <strong>structure-property relationships in complex oxides, high-entropy materials, and alloy systems</strong>. Developer of multiple open-source frameworks, including <em>HEA-ML</em>, <em>Interface-Maker</em>, <em>LCO-Doper</em>, <em>HEP-Explorer</em> and <em>Masgent</em> for data-driven discovery and design of novel materials.
             </p>
           </section>
 
@@ -71,7 +71,7 @@ export default function CV() {
                   <span className="text-gray-400">Materials Engineering</span>
                 </div>
                 <div className="text-right">
-                  <strong>2021 - Present</strong> <br />
+                  <strong>2021 - 2026</strong> <br />
                   <span className="text-gray-400">Ph.D.</span>
                 </div>
               </li>
@@ -122,7 +122,7 @@ export default function CV() {
                   <span className="text-gray-400">Worcester Polytechnic Institute, USA</span>
                 </div>
                 <div className="text-right">
-                  <strong>2021 - Present</strong> <br />
+                  <strong>2021 - 2026</strong> <br />
                   <span className="text-gray-400">Research Assistant</span>
                 </div>
               </li>
